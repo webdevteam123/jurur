@@ -252,15 +252,14 @@ main {
 }
 
 .item-container .name {
-    font-size: 1.25rem;
-    font-weight: bold;
+    font-size: 1rem;
     text-align: center;
     display: block;
     margin-bottom: 0.5rem;
 }
 
 .item-container .price {
-    font-size: 1.25rem;
+    font-size: 1rem;
     color: var(--sub-font-color);
     text-align: center;
 }
