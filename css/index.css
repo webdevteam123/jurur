@@ -36,7 +36,7 @@
 
 .slider-item .slider-item-img {
     object-fit: cover;
-    height: 100%;
+    width: 100%;
 }
 
 .slider-item .item-desc {
