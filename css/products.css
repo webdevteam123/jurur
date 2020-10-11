@@ -9,6 +9,7 @@
     --section-margin: 2rem;
     --main-font: 'Raleway', sans-serif;
     --footer-bg-color: #f2f2f2;
+    --img-size: 15rem;
 }
 
 
@@ -113,7 +114,7 @@ main {
 /* Group Section */
 
 main .group {
-    width: 20%;
+    width: 17.5%;
     padding-right: 1rem;
 }
 
@@ -140,6 +141,8 @@ main .group {
     border-radius: 4px;
 }
 
+.group-item ul .active:hover { background: var(--main-bg-color); }
+
 @media(max-width: 768px) {
     main .group { width: 100%; padding: 0; }
 }
@@ -153,27 +156,36 @@ main .products-container { flex: 1; }
 
 .products-container .title {
     font-size: 32px;
+    text-align: end;
     font-family: var(--main-font);
     margin-bottom: var(--section-margin);
 }
 
 .products-container .product-items-container {
-    display: grid;
+    display: flex;
     width: 100%;
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: 1rem;
+    gap: 1rem;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
     margin-bottom: var(--section-margin);
 }
 
 .product-items-container .item-container { 
-    position: relative;
-    width: 100%;
+    max-width: var(--img-size);
 }
-.product-items-container .item-container:hover > .hover-box {
+.product-items-container .item-container:hover > .img-container .hover-box {
     opacity: 1;
 }
-.product-items-container .item-container:hover > .hover-box .main-btn {
+.product-items-container .item-container:hover > .img-container .hover-box .main-btn {
     transform: translateY(-100%);
+}
+
+.item-container .img-container {
+    position: relative;
+    width: 100%;
+    height: var(--img-size);
+    margin-bottom: 1rem;
 }
 
 .item-container .hover-box { 
@@ -183,21 +195,22 @@ main .products-container { flex: 1; }
     left: 0;
     background: rgba(255, 255, 255, 0.75);
     width: 100%;
-    height: 80%;
+    height: 100%;
     overflow: hidden;
     transition: opacity 250ms ease-in-out;
 }
 
-.item-container .item-btn {
+.hover-box .item-btn {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
 
-.item-container .item-btn button { margin: 1rem; }
+.hover-box .item-btn button,
+.hover-box .item-btn a { margin: 1rem; }
 
-.item-container .item-btn button i {
+.hover-box .item-btn i {
     font-size: 1.5rem;
     color: var(--main-bg-color);
 }
@@ -217,7 +230,7 @@ main .products-container { flex: 1; }
 
 .item-container .img {
     width: 100%;
-    height: 80%;
+    height: 100%;
     margin-bottom: 0.5rem;
 }
 
