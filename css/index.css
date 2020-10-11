@@ -243,12 +243,66 @@ main {
     grid-gap: 1rem;
 }
 
-.product-items-container .item-container {
+.product-items-container .item-container { 
+    max-width: var(--img-size);
+}
+.product-items-container .item-container:hover > .img-container .hover-box {
+    opacity: 1;
+}
+.product-items-container .item-container:hover > .img-container .hover-box .main-btn {
+    transform: translateY(-100%);
+}
+
+.item-container .img-container {
+    position: relative;
     width: 100%;
+    height: var(--img-size);
+    margin-bottom: 1rem;
+}
+
+.item-container .hover-box { 
+    position: absolute;
+    top: 0;
+    opacity: 0;
+    left: 0;
+    background: rgba(255, 255, 255, 0.75);
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    transition: opacity 250ms ease-in-out;
+}
+
+.hover-box .item-btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.hover-box .item-btn button,
+.hover-box .item-btn a { margin: 1rem; }
+
+.hover-box .item-btn i {
+    font-size: 1.5rem;
+    color: var(--main-bg-color);
+}
+
+.hover-box .main-btn {
+    position: absolute;
+    transition: transform 250ms ease-in-out;
+    top: 100%;
+    left: 0%;
+    width: 100%;
+    background: var(--main-bg-color);
+    color: #fff;
+    padding: 0.5rem 0;
+    text-align: center;
+    font-size: 1rem;
 }
 
 .item-container .img {
     width: 100%;
+    height: 100%;
     margin-bottom: 0.5rem;
 }
 
@@ -263,7 +317,6 @@ main {
     font-size: 1rem;
     color: var(--sub-font-color);
     text-align: center;
-}
 
 @media(max-width: 768px) {
     .products-container { width: 95%; }
