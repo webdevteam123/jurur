@@ -32,13 +32,16 @@ hr {
     height: 1px;
 }
 
+ul {
+    list-style: none;
+}
 
 /* ----------------------------------------------------------- */
 
 
 /* Header -> Navbar */
 header {
-    height: 10vh;
+    height: 5rem;
     width: 80%;
     margin: auto;
     display: flex;
@@ -99,8 +102,7 @@ header .navbar ul { list-style: none; }
 @media(max-width: 728px) {
     header {
         display: block;
-        
-        height: 27.5vh;
+        height: 7.5rem;
         width: 95%;
         margin: auto;
     }
@@ -123,10 +125,6 @@ header .navbar ul { list-style: none; }
     .sub-nav-list .nav-item button { font-size: 1.75rem; margin: 0; }
     .sub-nav-list .search { font-size: 1.75rem; margin: 0 1rem; }
     .sub-nav-list .user { display: none }
-}
-
-@media(max-width: 600px) {
-    header { height: 17.5vh; }
 }
 
 /* ----------------------------------------------------------- */

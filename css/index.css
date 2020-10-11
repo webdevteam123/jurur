@@ -6,7 +6,7 @@
     --main-font-color: #3d3f56;
     --sub-bg-color: #A3CEF1;
     --sub-font-color: #73B1BC;
-    --section-margin: 2.5rem;
+    --section-margin: 2rem;
     --main-font: 'Raleway', sans-serif;
     --footer-bg-color: #f2f2f2;
 }
@@ -16,7 +16,7 @@
 
 /* Slider */
 .slider-container {
-    height: 75vh;
+    height: 40rem;
     overflow: hidden;
     position: relative;
     margin-bottom: var(--section-margin);
@@ -64,7 +64,7 @@
 .item-desc .redirect {
     background: var(--main-bg-color);
     color: #fff;
-    padding: 1vh 1.5vw;
+    padding: 0.5rem 1.5rem;
     font-size: 28px;
     font-family: var(--main-font);
     font-weight: bold;
@@ -92,7 +92,7 @@
 }
 
 @media(max-width: 728px )  {
-    .slider-container { height: 70vh; }
+    .slider-container { height: 30rem; }
     .slider-item .slider-item-img { width: 130%;  }
     .slider-item .item-desc { 
         text-align: center;
@@ -103,9 +103,9 @@
         left: 0;
         height: 40%;
     }
-    .slider-item .item-desc .title { font-size: 32px; }
-    .slider-item .item-desc .para { font-size: 20px; }
-    .slider-item .item-desc .redirect { font-size: 24px; padding: 1vh 5vw }
+    .slider-item .item-desc .title { font-size: 36px; }
+    .slider-item .item-desc .para { font-size: 24px; }
+    .slider-item .item-desc .redirect { font-size: 24px; padding: 0.5rem 1.5rem }
     .slider-balls-container .slider-btn i { font-size: 1.25rem }
     .slider-balls-container .slider-ball { height: 1.5rem; }
     .slider-container .slider-balls-container { top: 80% }
@@ -134,7 +134,7 @@ main {
 }
 
 .banner .banner-item {
-    height: 75vh;
+    height: 40rem;
     margin-bottom: var(--section-margin);
     display: flex;
     align-items: center;
@@ -185,23 +185,19 @@ main {
     color: #fff;
 }
 .banner-desc .redirect {
-    padding: 1vh 1.5vw;
+    padding: 0.5rem 1.5rem;
     font-size: 28px;
     font-family: var(--main-font);
     font-weight: bold;
 }
 
 @media(max-width: 768px) {
-    .banner .banner-item { height: 75vh; text-align: center; }
+    .banner .banner-item { height: 22.5rem; text-align: center; }
     .banner-item  .banner-item-img { display: none }
     .banner-item .banner-desc { width: 95%; margin: auto; }
     .banner-desc .title { font-size: 36px; }
     .banner-desc .para { font-size: 28px; }
-    .banner-desc .redirect { font-size: 24px; padding: 1vh 5vw }
-}
-
-@media(max-width: 600px) {
-    .banner .banner-item { height: 50vh; text-align: center; }
+    .banner-desc .redirect { font-size: 24px; padding: 0.5rem 1.5rem }
 }
 
 /* ----------------------------------------------------------- */
