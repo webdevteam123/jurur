@@ -12,23 +12,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Strawberry Cake | Jur Ur</title>
+    <link rel="stylesheet" href="product.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/60fa06b939.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <!-- Header -->
     <header>
         <!-- Logo -->
-        <img src="" alt="logo">
+ 
         <!-- Navbar -->
-        <nav>
-            <div>
-                <h5>Locations</h5>
-                <ul>
+        <nav class="header">
+ 
+            <div class="upper header">
+                <img class="logo" src="logo.svg" alt="logo">
+                <h5 class="location">Locations<i class="fas fa-map-marker-alt"></i></h5>
+                <ul class="top-icons">
                     <li>Search</li>
                     <li><button>Cart</button></li>
                     <li><a href="account.html">User</a></li>
                 </ul>
             </div>
-            <ul>
+            <ul class="bottom header">
                 <li><a href="products.html">CAKE</a></li>
                 <li><a href="products.html">BAKERY</a></li>
                 <li><a href="products.html">BEVERAGE</a></li>
@@ -41,31 +47,35 @@
     <!-- Main -->
     <!-- Products Information -->
     <main>
+        <div class="nav-menu">
+            <a class="nav-link1" href="index.html">Home<a/> / <a class="nav-link2" href="products.html">Products</a> / <a class="nav-link3" href="product.html">Cake</a>
+        </div>
         <section>
             <!-- Image -->
-            <img src="" alt="product-img">
-            <div>
+            <img class="product-img" src="straw.jpg" alt="product-img">
+            <div class="product-info">
                 <!-- Title -->
-                <h1>STRAWBERRY CAKE</h1>
-                <h5>&#36; 6.99</h5>
+                <h1 class="product-title">STRAWBERRY CAKE</h1>
+                <h5 class="price">&#36; 6.99</h5>
                 <!-- Description -->
-                <p>Strawberry cake is a cake that uses strawberry as a primary ingredient. Strawberries may be used in the cake 
-                    batter, atop cakes and in a strawberry cake's frosting. Some are served chilled or partially frozen, and they are
-                    sometimes served as a Valentine's Day dish.</p>
+                <p class="text1">Strawberry cake is a cake that uses strawberry as a primary ingredient. Strawberries may be used in
+                 the cake batter, atop cakes and in a strawberry cake's frosting. Some are served chilled or partially
+                 frozen, and they are sometimes served as a Valentine's Day dish.</p>
+                <h3 class="ingredient">INGREDIENTS</h3>
                 <!-- Ingredients -->
-                <h3>milk chocolate (sugar, cocoa butter, chocolate, skim milk, lactose, milkfat, soy lecithin, artificial flavor), peanuts,
-                    corn syrup, sugar, palm oil, skim milk, lactose, salt, egg whites, talia, artificial flavor.</h3>
+                <h3 class="text2">milk chocolate (sugar, cocoa butter, chocolate, skim milk, lactose, milkfat, soy lecithin, artificial flavor),
+                 peanuts, corn syrup, sugar, palm oil, skim milk, lactose, salt, egg whites, talia, artificial flavor.</h3>
                 <!-- Customization -->
-                <div>
+                <div class="size">
                     <h5>SIZE</h5>
-                    <div>
+                    <div id="lil-buttons">
                         <button type="button">7</button>
                         <button type="button">8</button>
                         <button type="button">9</button>
                         <button type="button">10</button>
                     </div>
                 </div>
-                <div>
+                <div id="amount">
                     <h5>AMOUNTS</h5>
                     <form>
                         <input type="number" max="10" min="1">
@@ -75,9 +85,9 @@
                 </div>
             </div>
             <!-- Add to cart button -->
-            <button type="button">ADD TO CART</button>
+            <button class="add" type="button">ADD TO CART</button>
         </section>
-        <section>
+        <section class="bottom-main">
             <!-- Delivery -->
             <div>
                 <h2>Delivery Notice</h2>

@@ -1,0 +1,117 @@
+/* Home Page CSS */
+
+/* Root Elements */
+:root {
+    --main-bg-color: #507DBC;
+    --main-font-color: #3d3f56;
+    --sub-bg-color: #A3CEF1;
+    --sub-font-color: #73B1BC;
+    --section-margin: 2rem;
+    --main-font: 'Raleway', sans-serif;
+    --footer-bg-color: #f2f2f2;
+    --other-font:'Montserrat', sans-serif;
+    --bold-montserrat: 'Montserrat', sans-serif;
+    --price-color:#73B1BC;
+}
+
+/* ----------------------------------------------------------- */
+
+
+header, main {                  /*yoronhii*/
+	margin-left: 10%;
+	margin-right: 10%;
+	font-family: var(--other-font);
+	color: var(--main-font-color);
+
+}
+.nav-menu{                      /*home/ products  heseg*/
+    font-size: 16px;
+}
+.nav-menu a{                    /*home / prod hesgiin link*/
+    text-decoration: none;
+    color: var(--main-font-color);
+
+}
+section .product-info{  
+overflow: auto;                
+
+}
+main img{
+    float: left;
+}
+.product-title{
+    font-size: 36px; 
+    font-weight: 700;
+
+    
+}
+.price{
+    color:var(--price-color);
+    font-size: 28px;
+     margin-top: -1%;
+
+}
+.product-info p{
+    white-space: pre-line;
+    font-weight: 500;
+    font-size: 18px;
+    margin-top: -1%;
+}
+.product-info h3{
+    font-weight: 500;
+    font-size: 18px;
+    white-space: pre-line;
+}
+.ingredient{
+    font-size: 24px !important;
+    font-weight: 700 !important;
+    padding-bottom: 2%;
+}
+
+.size h5{
+    clear: left;
+
+    float: left;
+    padding-right: 30px;
+    font-size: 25px;
+    margin-top: 1vh;
+    font-weight: 400;
+}
+.size button{
+        overflow: auto;
+        margin-top: 1.3vh;
+        margin-right: -0.5%;
+        border-radius: 2px;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-top: 4px;
+        padding-bottom: 4px;
+        background-color: white;
+        border-color: var(--price-color);
+        border-width: 0.1px;
+        box-shadow: 0px 0px;
+
+}
+
+#amount h5{
+ float: left;
+ margin-left: 40%;
+ margin-top: -1%;
+ padding-right: 30px;
+font-size: 25px;
+font-weight: 400;
+}
+
+#amount form{
+    overflow: auto;
+
+    
+}
+
+
+
+
+
+
+
+
