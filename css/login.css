@@ -1,0 +1,181 @@
+/* Products Page CSS */
+
+/* Root Elements */
+:root {
+    --main-bg-color: #507DBC;
+    --main-font-color: #3d3f56;
+    --sub-bg-color: #A3CEF1;
+    --sub-font-color: #73B1BC;
+    --section-margin: 2rem;
+    --main-font: 'Raleway', sans-serif;
+    --footer-bg-color: #f2f2f2;
+}
+
+
+/* ----------------------------------------------------------- */
+/*main*/
+main {
+    margin-bottom: 5vh;
+}
+.login-item{
+    
+    display: flex;
+    justify-content: space-around;
+}
+.login-item .login-item-img{
+    width: 50%;
+}
+.login-item-img .login-img{
+    width: 80%;
+    height: 90%;
+    display: block;
+    margin-left: 300px;
+    padding-top: 2vh;
+}
+.login-item .login-box{
+    width: 50%;
+    height: 50%;
+    background: #fff;
+    margin-top: 70px;
+    margin-left : 300px;
+    padding-left: 10px;
+}
+.login-box .title {
+    color: var(--main-bg-color);
+    font-family: var(--main-font);
+    font-size: 48px;
+}
+
+.login-box input{
+    width: 30%;
+    margin-bottom: 30px;
+}
+
+.login-box input[type="text"], input[type="password"]  {
+    border: none;
+    border-bottom: 1px solid #000;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    font-size: 20px;
+}
+.login-box i.fas {
+    padding-bottom: 10px;
+    border-bottom: 1px solid #000;
+    padding-right: 10px
+}
+.login-box input[type="submit"]{
+    border: none;
+    background: var(--main-bg-color);
+    height: 35px;
+    width: 34%;
+    font-size: 20px;
+    color: #fff;
+    margin-top: 40px;
+    border-radius: 10px;
+}
+.login-box a.pass{
+    font-size: 15px;
+    text-align: right;     
+}
+.login-item-img a.account{
+    margin-left: 540px;
+    font-size: 20px; margin-top: 50px;
+}
+.login-box h5{
+    font-size: 20px;
+    margin-top: 40px;
+    margin-left: 60px;
+}
+.login-box i.fa{
+   padding: 10px 60px 10px 10px;
+   font-size: 25px;
+   width: 50px;
+   text-align: center;
+   text-decoration: none;
+   margin: 5px 5px;
+   border-radius: 10%;
+}
+.login-box i.fa:hover {
+    opacity: 0.7;
+}
+.login-box i.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.login-box i.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+.login-box i.fa-instagram {
+  background: #833AB4;
+  color: white;
+}
+@media(max-width: 768px){
+    .login .login-item{ align-items: center}
+    .logi-item  .login-item-img { display: none }
+    .login-item .login-box { width: 100%; margin: 5vh; }
+    .login-box .title { font-size: 36px; }
+    .login-box input { font-size: 20px; }
+    
+}
+/* Footer */
+footer {
+    width: 100%;
+    border-top: 0.5px solid #ccc;
+    background: var(--footer-bg-color);
+    padding: 2.5rem 0 0.5rem 0;
+}
+
+footer .main-footer-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    width: 80%;
+    margin: auto;
+    grid-gap: 1rem;
+    margin-bottom: var(--section-margin);
+}
+
+.main-footer-container .footer-items-container {
+    list-style: none;
+}
+
+.footer-items-container .item-title {
+    font-size: 24px;
+}
+
+.footer-items-container .item {
+    font-size: 1rem;
+    margin: 1rem 0;
+}
+
+footer .social-links {
+    text-align: center;
+    margin-bottom: var(--section-margin);
+}
+
+footer .social-links a {
+    font-size: 2rem;
+    margin: 1rem;
+}
+
+footer .copy-msg {
+    font-size: 0.875rem;
+    text-align: center;
+}
+
+@media(max-width: 768px) {
+    footer .main-footer-container { grid-template-columns: repeat(2, 1fr); }
+    .footer-items-container .item-title { font-size: 18px; }
+    .footer-items-container .item { font-size: 14px; }
+}
+
+@media(max-width: 600px) {
+    footer .main-footer-container { grid-template-columns: repeat(2, 1fr); }
+    .footer-items-container .item-title { font-size: 18px; }
+    .footer-items-container .item { font-size: 14px; }
+}
+
+
+/
