@@ -8,102 +8,112 @@
     	<meta name="language" content="English">
     	<meta name="keywords" content="login, log in, User, jur ur, jurur">
     	<meta name="viewport" content="width=device-width, initial-scale=1">
+    	<link rel="stylesheet" href="./css/style.css">
+    	<link rel="stylesheet" href="./css/login.css">
+    	<link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Raleway&family=Raleway:wght@400;900&display=swap" rel="stylesheet">
+    	<script src="https://kit.fontawesome.com/60fa06b939.js" crossorigin="anonymous"></script>
+
 </head>
 <body>
-	<header>
-		<img src="" alt="logo">
-		<nav>
-			<div>
-				<h5>Locations</h5>
-				<ul>
-					<li><input type="text" name="text" placeholder="Search"></li>
-             				<li><a href="payment.html">Cart</a></li>
-                    			<li><a href="account.html">User</a></li>
-				</ul>
-				<hr>
-			</div>
-			<div>
-				<ul>
-					<li><a href="products.html">CAKE</a></li>
-          				<li><a href="products.html">BAKERY</a></li>
-          				<li><a href="products.html">BEVERAGE</a></li>
-          				<li><a href="products.html">HOLYDAY</a></li>
-          				<li><a href="products.html">CUSTOM</a></li>
-				</ul>
-			</div>
-		</nav>
-	</header>>
+	<header class=header>
+        <!-- Logo -->
+        <div class="logo-container">
+            <a class="sub-nav-item location-icon"> <i class="fas fa-map-marker-alt"></i></a> 
+            <img class="logo" src="./assets/svg/logo.svg" alt="logo">
+            <a class="sub-nav-item location-icon" href="account.html"><i class="fa fa-user"></i></a>
+        </div>
+        <!-- Navbar -->
+        <nav class="navbar">
+            <div class="sub-navbar">
+                <a class="sub-nav-item location">LOCATIONS <i class="fas fa-map-marker-alt"></i></a>
+                <button class="sub-nav-item hamburger"><i class="fas fa-bars"></i></button>
+                <ul class="sub-nav-list">
+                    <li class="nav-item search"><i class="fas fa-search"></i></li>
+                    <li class="nav-item cart"><button><i class="fas fa-shopping-cart"></i></button></li>
+                    <li class="nav-item user"><a href="account.html"><i class="fa fa-user"></i></a></li>
+                </ul>
+            </div>
+            <hr color="#ccc">
+            <ul class="sub-navbar menu">
+                <li class="nav-item"><a href="products.html">CAKE</a></li>
+                <li class="nav-item"><a href="products.html">BAKERY</a></li>
+                <li class="nav-item"><a href="products.html">BEVERAGE</a></li>
+                <li class="nav-item"><a href="products.html">HOLYDAY</a></li>
+                <li class="nav-item"><a href="products.html">CUSTOM</a></li>
+            </ul>
+        </nav>
+    </header>
 	<main>
-		<section>
-			<h1>Welcome back, LOGIN here</h1>
-				<div>
+		<section class="login">
+			<div class="login-item">
+				<div class="login-item-img">
+                <img class="login-img" src="assets/svg/loginpic.svg" alt="section-img"><br>
+                <a href="signup.html" class="account">Don't have an account???</a> 
+
+				</div>
+				<div class="login-box">
+					<h1 class="title">Log In</h1>
     				<form>
-            			<div>
-            				<input type="text" name="username" placeholder="Username" label ><br>
-            			</div>
-            			<div>
-    					<input type="text" name="password"  placeholder="Password"><br>
-    					<a href="#">Forgot password???</a>
-            			</div>
-            			<div>
-            				<input type="submit" name="submit" value="Log In" ><br>
-					<label for="checkbox">Keep me logged in</label>
-            				<input type="checkbox" name="checkbox" value="checkbox"><br>
-            				<input type="submit" name="submit2" value="Sign Up" ><br>
-            			</div>
-            			<div>
-            				<hr><h5>Or Log In with</h5>
-            				<input type="submit" name="submit2" value="Sign Up" ><br>
-            				<input type="submit" name="submit3" value="Continue with facebook" ><br>
-            				<input type="submit" name="submit4" value="Continue with twitter" ><br>
-            				<input type="submit" name="submit5" value="Continue with instagram" ><br>
-            			</div>
-    				</form>
-    			</div>
+            			<i class="fas fa-user-alt"></i><input type="text" name="" placeholder="Email" style="margin-top: 40px"> <br>
+    					<i class="fas fa-lock"></i><input type="text" name=""  placeholder="Password"><br>
+
+            			<a href="#" class="pass" >Forgot password???</a> <br>
+            			<input type="submit" name="submit" value="Log In" ><br>
+                        <h5>Or Log In with</h5>
+                        <a href="http://www.facebook.com"><i class="fa fa-facebook"></i></a>
+                        <a href="http://www.twitter.com"><i class="fa fa-twitter"></i></a>
+                        <a href="http://www.instagram.com"><i class="fa fa-instagram"></i></a>
+            		</form>
+            	</div>
+            </div>
 		</section>
 	</main>
-	<footer>
-        <div>
-            <div>
-                <h2>ABOUT US</h2>
-                <a href="about.html">Introduction</a><br>
-                <a href="about.html"">Goal</a><br>
-                <a href="about.html"">Timeline</a><br>
-                <a href="about.html"">Achievements</a><br>
-            </div>
-            <div>
-                <h2>PRODUCTS</h2>
-                <a href="products.html">Cake</a><br>
-                <a href="products.html">Bakery</a><br>
-                <a href="products.html">Beverage</a><br>
-                <a href="products.html">Holiday</a><br>
-            </div>
-            <div>
-                <h2>ONLINE</h2>
-                <a href="#">Delivery Area</a><br>
-                <a href="#">Term and Condition</a><br>
-                <a href="#">Security</a><br>
-                <a href="#">How to Order</a><br>
-            </div>
-            <div>
-                <h2>ACCOUNT</h2>
-                <a href="login.html">Login</a><br>
-                <a href="signup.html">Register</a><br>
-            </div>
-            <div>
-                <h2>CONTACT</h2>
-                <a href="#">Contact Us</a><br>
-                <a href="#">Feedback</a><br>
-                <a href="#">Phone: 70045556</a><br>
-                <a href="#">Email: order@jurur.mn</a><br>
-            </div>
+<!-- Footer -->
+    <footer>
+        <!-- Main Footer -->
+        <div class="main-footer-container">
+            <ul class="footer-items-container">
+                <h1 class="item-title">ABOUT US</h1>
+                <li class="item"><a href="about.html">Introduction</a></li>
+                <li class="item"><a href="about.html">Goal</a></li>
+                <li class="item"><a href="about.html">Timeline</a></li>
+                <li class="item"><a href="about.html">Achievements</a></li>
+            </ul>
+            <ul class="footer-items-container">
+                <h1 class="item-title">PRODUCTS</h1>
+                <li class="item"><a href="products.html">Cake</a></li>
+                <li class="item"><a href="products.html">Bakery</a></li>
+                <li class="item"><a href="products.html">Beverage</a></li>
+                <li class="item"><a href="products.html">Holiday</a></li>
+            </ul>
+            <ul class="footer-items-container">
+                <h1 class="item-title">ONLINE</h1>
+                <li class="item"><a href="about.html">Delivery Area</a></li>
+                <li class="item"><a href="about.html">Term and Condition</a></li>
+                <li class="item"><a href="about.html">Security</a></li>
+                <li class="item"><a href="about.html">How to Order</a></li>
+            </ul>
+            <ul class="footer-items-container">
+                <h1 class="item-title">ACCOUNT</h1>
+                <li class="item"><a href="login.html">Login</a></li>
+                <li class="item"><a href="signup.html">Register</a></li>
+            </ul>
+            <ul class="footer-items-container">
+                <h1 class="item-title">CONTACT</h1>
+                <li class="item"><a href="about.html">Contact Us</a></li>
+                <li class="item"><a href="about.html">Feedback</a></li>
+                <li class="item"><a href="about.html">Phone: 70045556</a></li>
+                <li class="item"><a href="about.html">Email: order@jurur.mn</a></li>
+            </ul>
         </div>
-        <div>
-            <a href="#">Facebook</a>
-            <a href="#">Twitter</a>
-            <a href="#">Instagram</a>
+        <!-- Social Links -->
+        <div class="social-links">
+            <a href="http://www.facebook.com"><i class="fab fa-facebook-square"></i></a>
+            <a href="http://www.twitter.com"><i class="fab fa-twitter-square"></i></a>
+            <a href="http://www.instagram.com"><i class="fab fa-instagram-square"></i></a>
         </div>
-        <h6>Copyright &copy; www.jurur.mn. All right reserved.</h6>
+        <!-- Copyright Notice -->
+        <h6 class="copy-msg">Copyright &copy; www.jurur.mn. All right reserved.</h6>
     </footer>
 </body>
-</html>>
+</html>
