@@ -53,6 +53,7 @@
 
 .ads-banner .ads-banner-desc {
     color: #fff;
+    margin-top: 5rem;
     font-size: 72px;
     font-family: var(--main-font);
     font-weight: bold;
@@ -62,7 +63,7 @@
 
 @media(max-width: 768px) {
     .ads-banner { height: 17.5rem; }
-    .ads-banner .ads-banner-desc { margin-top: 5rem; font-size: 48px; }
+    .ads-banner .ads-banner-desc { font-size: 48px; }
 }
 
 /* ----------------------------------------------------------- */
