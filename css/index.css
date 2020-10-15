@@ -200,8 +200,13 @@ main {
 }
 
 .first .banner-desc .redirect {
-    background: var(--main-bg-color);
+    /* background: var(--main-bg-color); */
     color: #fff;
+    border: 5px solid #fff;
+}
+.first .banner-desc .redirect:hover {
+    background: #fff;
+    color: #FFD1C7;
 }
 .even .banner-desc .redirect {
     background: var(--main-font-color);
