@@ -200,14 +200,10 @@ main {
 }
 
 .first .banner-desc .redirect {
-    /* background: var(--main-bg-color); */
-    color: #fff;
-    border: 5px solid #fff;
-}
-.first .banner-desc .redirect:hover {
     background: #fff;
     color: #FFD1C7;
 }
+
 .even .banner-desc .redirect {
     background: var(--main-font-color);
     color: #fff;
@@ -221,8 +217,9 @@ main {
 
 @media(max-width: 768px) {
     .banner .banner-item { height: 22.5rem; text-align: center; }
+    .banner .first { background: #FFD1C7; }
     .banner-item  .banner-item-img { display: none }
-    .banner-item .banner-desc { width: 95%; margin: auto; }
+    .banner-item .banner-desc { width: 100%; margin: auto; padding: 0; }
     .banner-desc .title { font-size: 36px; }
     .banner-desc .para { font-size: 28px; }
     .banner-desc .redirect { font-size: 24px; padding: 0.5rem 1.5rem }
