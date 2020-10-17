@@ -1,0 +1,313 @@
+/* Products Page CSS */
+
+/* Root Elements */
+:root {
+    --main-bg-color: #507DBC;
+    --main-font-color: #3d3f56;
+    --sub-bg-color: #A3CEF1;
+    --sub-font-color: #73B1BC;
+    --section-margin: 2rem;
+    --main-font: 'Raleway', sans-serif;
+    --footer-bg-color: #f2f2f2;
+}
+
+
+/* ----------------------------------------------------------- */
+/*main*/
+main {
+    margin-bottom: 5vh;
+}
+.wave{
+    position: fixed;
+    height: 100%;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+.login{
+    align-items: center;
+}
+.login h2{
+    color: #fff;
+    font-size: 30px;
+    margin-top: 100px;
+    margin-left: 1470px;
+}
+.login .btn1{
+    display: block;
+    width: 300px;
+    height: 50px;
+    border-radius: 25px;
+    margin: 2rem 0;
+    margin-left: 1470px;
+    font-size: 20px;
+    outline: none;
+    border:none;
+    background-color: #fff;
+    color: var(--main-bg-color);
+    cursor: pointer;
+    background-size: 200%;
+    text-transform: uppercase;
+}
+.signup-item{ 
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 7rem;
+    padding : 0 2rem;
+}
+.signup-item .signup-item-img{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.signup-item-img .signup-img{
+    margin-top: -300px;
+    width: 600px;
+    margin-right: 300px;
+}
+.profile{
+    width: 100px;
+    border-radius: 50%;
+}
+.signup-item .signup-container{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-left: 300px;
+    margin-top: -600px;
+}
+form{
+    width: 360px;
+}
+.signup-container .title {
+    color: var(--main-bg-color);
+    font-family: var(--main-font); 
+    font-size: 48px;
+    margin: 15px 0;
+}
+
+.signup-container .input-div{
+    position: relative;
+    display: grid;
+    grid-template-columns: 7% 93%;
+    margin: 30px 0;
+    padding: 5px 0;
+    border-bottom: 1px solid #000;
+}
+.input-div.focus div h5{
+    top: -5px;
+    font-size: 15px;
+}
+.signup-container .input-div.one{
+    margin-top: 70px;
+}
+.signup-container .input-div.two{
+    margin-bottom: 4px;
+}
+.login-div i.fas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+i.fas{
+    color: var(--main-font-color);
+    margin-top: 15px;
+}
+.input-div > div{
+    position: relative;
+    height: 45px;
+}
+.input-div > div h5{
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #999;
+    font-size: 20px;
+}
+.input-div .input{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    border:none;
+    outline: none;
+    background: none;
+    padding: 0.5rem 0.7rem;
+    font-size: 20px;
+}
+.signup-container a.pass{
+    display:block;
+    text-align: right;
+    text-decoration: none;
+    font-size: 15px;
+}
+a.pass:hover{
+    color: var(--main-bg-color);
+}
+.signup-container .btn{
+    display: block;
+    width: 100%;
+    height: 50px;
+    border-radius: 25px;
+    margin: 3rem 0;
+    font-size: 20px;
+    outline: none;
+    border:none;
+    background-image: linear-gradient(to right, #507dbc, #4370af, #628bc3);
+    cursor: pointer;
+    background-size: 200%;
+    color: #fff;
+    transition: .5s;
+    text-transform: uppercase;
+}
+.btn:hover{
+    background-position: right;
+}
+.platforms h5{
+    font-size: 15px;
+}
+
+.platforms ul{
+    position: absolute;
+    display: flex;
+}
+.platforms ul li{
+    list-style: none;
+    margin: 30px 30px;
+}
+.platforms ul li .fa{
+    font-size: 30px;
+    line-height: 60px;
+    transition: .6s;
+    color: #000;
+}
+.platforms ul li a{
+    position: relative;
+    display: block;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color:#e6e6e6;
+    text-align: center;
+    transition: .6s;
+}
+.platforms ul li a:hover{
+    transform: translate(0, -10px);
+}
+.platforms ul li:nth-child(1) a:hover{
+    background-color: #3b5999;
+}
+.platforms ul li:nth-child(2) a:hover{
+    background-color: #55acee;
+}
+.platforms ul li:nth-child(3  ) a:hover{
+    background-color: #e4405f;
+}
+@media(max-width: 1050px ){
+    form{
+        width: 290px;
+        margin-left: -200px;
+        margin-top: 500px;
+    }
+    form h2{
+        font-size: 2.4rem;
+        margin: 8px 0;
+    }
+    .signup-item-img .signup-img{
+        margin-top: 70px;
+        margin-left: -150px;
+        width: 500px;
+    }
+    .signup-container{
+        grid-gap: 5rem;
+    }
+    .login {
+        display: none;
+    }
+}
+@media(max-width: 768px){
+    .wave{
+        display: none;
+    }
+    .signup-img{
+        display: none;
+    }
+    .signup-item{
+        grid-template-columns: 1fr;
+    }
+    
+    .signup-container{
+        justify-content: center;
+        margin-top: -50px;
+        align-items: center;
+    }
+    .login{
+        display: none;
+    }
+    .profile{
+        margin-top: 100px;
+    }
+}
+/* Footer */
+footer {
+    width: 100%;
+    border-top: 0.5px solid #ccc;
+    background: var(--footer-bg-color);
+    padding: 2.5rem 0 0.5rem 0;
+}
+
+footer .main-footer-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    width: 80%;
+    margin: auto;
+    grid-gap: 1rem;
+    margin-bottom: var(--section-margin);
+}
+
+.main-footer-container .footer-items-container {
+    list-style: none;
+}
+
+.footer-items-container .item-title {
+    font-size: 24px;
+}
+
+.footer-items-container .item {
+    font-size: 1rem;
+    margin: 1rem 0;
+}
+
+footer .social-links {
+    text-align: center;
+    margin-bottom: var(--section-margin);
+}
+
+footer .social-links a {
+    font-size: 2rem;
+    margin: 1rem;
+}
+
+footer .copy-msg {
+    font-size: 0.875rem;
+    text-align: center;
+}
+
+@media(max-width: 768px) {
+    footer .main-footer-container { grid-template-columns: repeat(2, 1fr); }
+    .footer-items-container .item-title { font-size: 18px; }
+    .footer-items-container .item { font-size: 14px; }
+}
+
+@media(max-width: 600px) {
+    footer .main-footer-container { grid-template-columns: repeat(2, 1fr); }
+    .footer-items-container .item-title { font-size: 18px; }
+    .footer-items-container .item { font-size: 14px; }
+}
+
+
+/
