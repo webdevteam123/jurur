@@ -1,131 +1,160 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Log In - Jur Ur Bakery</title>
-	<meta charset="UTF-8">
-	<meta name="title" content="Branch">
-    	<meta name="description" content="The location of the branches of the Jur Ur">
-    	<meta name="language" content="English">
-    	<meta name="keywords" content="Branch, location, jur ur, jurur">
-    	<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="UTF-8">
+    <meta name="title" content="Branch">
+    <meta name="description" content="The location of the branches of the Jur Ur">
+    <meta name="language" content="English">
+    <meta name="keywords" content="Branch, location, jur ur, jurur">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="assets/favicon.png"/>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/branch.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Raleway&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/60fa06b939.js" crossorigin="anonymous"></script>
+    <title>Салбарууд | Жүр Үр Бэкэйри</title>
 </head>
 <body>
-	<header>
-		<img src="" alt="logo">
-		<nav>
-			<div>
-				<h5>Locations</h5>
-				<ul>
-					<li><input type="text" name="text" placeholder="Search"></li>
-                    			<li><a href="payment.html">Cart</a></li>
-                    			<li><a href="account.html">User</a></li>
-				</ul>
-				<hr>
-			</div>
-			<div>
-				<ul>
-					<li><a href="#">CAKE</a></li>
-                			<li><a href="products.html">BAKERY</a></li>
-                			<li><a href="products.html">BEVERAGE</a></li>
-                			<li><a href="products.html">BEVERAGE</a></li>
-                			<li><a href="products.html">HOLYDAY</a></li>
-                			<li><a href="products.html">CUSTOM</a></li>
-				</ul>
-			</div>
-		</nav>
-	</header>>
+	<!-- Header -->
+    <header class="trans">
+        <!-- Navbar -->
+        <nav class="navbar menu">
+            <!-- <hr color="#ccc"> -->
+            <ul class="main-navbar">
+                <li class="nav-item close"><button><i class="fas fa-times"></i></button></li>
+                <li class="nav-item"><a href="products.html">БЯЛУУ</a></li>
+                <li class="nav-item"><a href="products.html">БЭЙКЕРИ</a></li>
+                <li class="nav-item"><a href="products.html">УНДАА</a></li>
+                <li class="nav-item"><a href="products.html">БАЯРЫН</a></li>
+                <li class="nav-item"><a href="products.html">ОНЦГОЙ</a></li>
+            </ul>
+            <button class="nav-item hamburger"><i class="fas fa-bars"></i></button>
+        </nav>
+        <!-- Logo -->
+        <div class="logo-container">
+            <svg id="Component_6_1" data-name="Component 6 – 1" xmlns="http://www.w3.org/2000/svg" width="171" height="78" viewBox="0 0 171 78">
+                <text class="blue" id="JUR_UR" data-name="JUR UR" transform="translate(0 45)" fill="#fff" font-size="48" font-family="Raleway" font-weight="800"><tspan x="0" y="0">JUR UR</tspan></text>
+                <text class="black" id="BAKERY" transform="translate(68 72)" fill="#fff" font-size="24" font-family="Montserrat-Regular, Montserrat"><tspan x="0" y="0">BAKERY</tspan></text>
+                <text class="black" id="SINCE_1987" data-name="SINCE 1987" transform="translate(12 62)" fill="#fff" font-size="10" font-family="Montserrat-Regular, Montserrat"><tspan x="0" y="0">SINCE 1987</tspan></text>
+            </svg>              
+        </div>
+        <nav class="navbar">
+            <ul class="sub-navbar">
+                <li class="nav-item locations"><a href="branch.html">САЛБАРУУД</a></li>
+                <li class="nav-item search"><i class="fas fa-search"></i></li>
+                <li class="nav-item user"><a href="account.html"><i class="fas fa-user-circle"></i></a></li>
+                <li class="nav-item cart"><button><i class="fas fa-box"></i></button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Ads Banner -->
+    <div class="ads-banner">
+        <h1 class="ads-banner-desc">САЛБАРУУДЫН БАЙРШИЛ</h1>
+        <div class="banner-bottom-edge"></div>
+    </div>
+    <!-- History -->
+    <ul class="history">
+        <li class="history-item"><a href="index.html">Нүүр</a></li>
+        <li class="history-item with-slash"><a href="products.html">Салбарууд</a></li>
+    </ul>
 	<main>
-		<section>
-			<h1>OUR LOCATIONS</h1>
-				<div>
-                    <div>
-                        <img src="" alt="main branch">
-                        <h4>MAIN BRANCH</h4>
-                        <p>Visit us:   351 AMSTERDAM, NYC 10023</p>
-                        <p>Call us:    70045555</p>
-                        <p>Open:       08:30AM - 22:00PM</p>
+		<section class="branches">
+			<div class="branch-container" >
+                <div class="branch-items-container">
+                    <div class="main-branch br lt">
+                        <img class="img" src="assets/img/branch.png" alt="main-branch">
+                        <h2 class="branch-type">ҮНДСЭН САЛБАР</h2>
+                        <h3>Хаяг:      Баянгол дүүрэг, 13-р хороо, 3-р хороолол </h3>
+                        <h3>Утас:      70355512 </h3>
+                        <h3>Нээх цаг:  08:30 - 22:00 </h3>
                     </div>
-                    <div>
-                        <img src="" alt="sub-branch1">
-                        <h4>SUB-BRANCH</h4>
-                        <p>Visit us:   341 LAFAYETTE AT, NYC 10012</p>
-                        <p>Call us:    70045555</p>
-                        <p>Open:       08:30AM - 22:00PM</p>
+                    <div class="sub-branch-one br gt">
+                        <img class="img" src="assets/img/branch.png" alt="main-branch">
+                        <h2 class="branch-type">ДЭД САЛБАР</h2>
+                        <h3>Хаяг:      Чингэлтэй дүүрэг, 1-р хороо, 8-1-р байр</h3>
+                        <h3>Утас:      70355232</h3>
+                        <h3>Нээх цаг:  08:30 - 22:00</h3>
                     </div>
-                    <div>
-                        <img src="" alt="sub-branch2">
-                        <h4>SUB-BRANCH</h4>
-                        <p>Visit us:   341 LAFAYETTE AT, NYC 10012</p>
-                        <p>Call us:    70045555</p>
-                        <p>Open:       08:30AM - 22:00PM</p>
+                    <div class="sub-branch-two br gt">
+                        <img class="img" src="assets/img/branch.png" alt="main-branch">
+                        <h2 class="branch-type">ДЭД САЛБАР</h2>
+                        <h3>Хаяг:      Баянзүрх дүүрэг, 7-р хороо, 15-р хороолол</h3>
+                        <h3>Утас:      70354212</h3>
+                        <h3>Нээх цаг:  08:30 - 22:00</h3>
                     </div>
-                    <div>
-                        <img src="" alt="sub-branch3">
-                        <h4>SUB-BRANCH</h4>
-                        <p>Visit us:   351 AMSTERDAM, NYC 10023</p>
-                        <p>Call us:    70045555</p>
-                        <p>Open:       08:30AM - 22:00PM</p>
+                    <div class="sub-branch-three br lt">
+                        <img class="img" src="assets/img/branch.png" alt="main-branch">
+                        <h2 class="branch-type">ДЭД САЛБАР</h2>
+                        <h3>Хаяг:      Дархан хот, 12-р баг, 6-16</h3>
+                        <h3>Утас:      70351025</h3>
+                        <h3>Нээх цаг:  08:30 - 22:00</h3>
                     </div>
-                    <div>
-                        <img src="" alt="sub-branch4">
-                        <h4>SUB-BRANCH</h4>
-                        <p>Visit us:   351 AMSTERDAM, NYC 10023</p>
-                        <p>Call us:    70045555</p>
-                        <p>Open:       08:30AM - 22:00PM</p>
+                    <div class="sub-branch-four br lt">
+                        <img class="img" src="assets/img/branch.png" alt="main-branch">
+                        <h2 class="branch-type">ДЭД САЛБАР</h2>
+                        <h3>Хаяг:      Орхон аймаг, Согоот баг, 4-25</h3>
+                        <h3>Утас:      70350523</h3>
+                        <h3>Нээх цаг:  08:30 - 22:00</h3>
                     </div>
-                    <div>
-                        <img src="" alt="sub-branch5">
-                        <h4>SUB-BRANCH</h4>
-                        <p>Visit us:   341 LAFAYETTE AT, NYC 10012</p>
-                        <p>Call us:    70045555</p>
-                        <p>Open:       08:30AM - 22:00PM</p>
+                    <div class="sub-branch-five br gt">
+                        <img class="img" src="assets/img/branch.png" alt="main-branch">
+                        <h2 class="branch-type">ДЭД САЛБАР</h2>
+                        <h3>Хаяг:      Хан-Уул дүүрэг, 11-р хороо, Гэрэлт хотхон 17-9</h3>
+                        <h3>Утас:      70355623</h3>
+                        <h3>Нээх цаг:  08:30 - 22:00</h3>
                     </div>
                 </div>
-		</section>
-	</main>
+            </div>
+	   </section>
+    </main>
 	<footer>
-        <div>
-            <div>
-                <h2>ABOUT US</h2>
-                <a href="about.html">Introduction</a><br>
-                <a href="about.html">Goal</a><br>
-                <a href="about.html">Timeline</a><br>
-                <a href="about.html">Achievements</a><br>
-            </div>
-            <div>
-                <h2>PRODUCTS</h2>
-                <a href="proucts.html">Cake</a><br>
-                <a href="proucts.html">Bakery</a><br>
-                <a href="proucts.html">Beverage</a><br>
-                <a href="proucts.html">Holiday</a><br>
-            </div>
-            <div>
-                <h2>ONLINE</h2>
-                <a href="#">Delivery Area</a><br>
-                <a href="#">Term and Condition</a><br>
-                <a href="#">Security</a><br>
-                <a href="#">How to Order</a><br>
-            </div>
-            <div>
-                <h2>ACCOUNT</h2>
-                <a href="login.html">Login</a><br>
-                <a href="signup.html">Register</a><br>
-            </div>
-            <div>
-                <h2>CONTACT</h2>
-                <a href="#">Contact Us</a><br>
-                <a href="#">Feedback</a><br>
-                <a href="#">Phone: 70045556</a><br>
-                <a href="#">Email: order@jurur.mn</a><br>
-            </div>
+        <!-- Main Footer -->
+        <div class="main-footer-container">
+            <ul class="footer-items-container">
+                <h1 class="item-title">БИДНИЙ ТУХАЙ</h1>
+                <li class="item"><a href="about.html">Танилцуулга</a></li>
+                <li class="item"><a href="about.html">Зорилго үнэт зүйлс</a></li>
+                <li class="item"><a href="about.html">Он цагийн хэлхээс</a></li>
+                <li class="item"><a href="about.html">Бидний амжилтууд</a></li>
+            </ul>
+            <ul class="footer-items-container">
+                <h1 class="item-title">БҮТЭЭГДЭХҮҮН ҮЙЛЧИЛГЭЭ</h1>
+                <li class="item"><a href="products.html">Бялуун бүтээгдэхүүн</a></li>
+                <li class="item"><a href="products.html">Бэйкери бүтээгдэхүүн</a></li>
+                <li class="item"><a href="products.html">Ундааны төрөл</a></li>
+                <li class="item"><a href="products.html">Баярын бүтээгдэхүүн</a></li>
+            </ul>
+            <ul class="footer-items-container">
+                <h1 class="item-title">ОНЛАЙН ЗАХИАЛГА</h1>
+                <li class="item"><a href="about.html">Хүргэлтийн бүс</a></li>
+                <li class="item"><a href="about.html">Үйлчилгээний төрөл</a></li>
+                <li class="item"><a href="about.html">Нууцлал</a></li>
+                <li class="item"><a href="about.html">Хэрхэн захиалах вэ?</a></li>
+            </ul>
+            <ul class="footer-items-container">
+                <h1 class="item-title">МИНИЙ БҮРТГЭЛ</h1>
+                <li class="item"><a href="login.html">Нэвтрэх</a></li>
+                <li class="item"><a href="signup.html">Бүртгүүлэх</a></li>
+            </ul>
+            <ul class="footer-items-container">
+                <h1 class="item-title">ХОЛБОО БАРИХ</h1>
+                <li class="item"><a href="about.html">Холбоо барих</a></li>
+                <li class="item"><a href="about.html">Санал хүсэлт</a></li>
+                <li class="item"><a href="about.html">Утас: 70045556</a></li>
+                <li class="item"><a href="about.html">Имэйл: order@jurur.mn</a></li>
+            </ul>
         </div>
-        <div>
-            <a href="#">Facebook</a>
-            <a href="#">Twitter</a>
-            <a href="#">Instagram</a>
+        <!-- Social Links -->
+        <div class="social-links">
+            <a href="http://www.facebook.com"><i class="fab fa-facebook-square"></i></a>
+            <a href="http://www.twitter.com"><i class="fab fa-twitter-square"></i></a>
+            <a href="http://www.instagram.com"><i class="fab fa-instagram-square"></i></a>
         </div>
-        <h6>Copyright &copy; www.jurur.mn. All right reserved.</h6>
+        <!-- Copyright Notice -->
+        <h6 class="copy-msg">Copyright &copy; www.jurur.mn. All right reserved.</h6>
     </footer>
+    <script src="main.js"></script>
 </body>
 </html>>
 
