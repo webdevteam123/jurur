@@ -83,21 +83,25 @@ header {
 }
 .white .blue { fill: var(--main-bg-color); }
 .white .black { fill: var(--main-font-color); }
-.white .navbar .hamburger i { color: var(--main-bg-color) }
-.white .navbar .nav-item a { color: var(--main-bg-color); }
-.white .navbar .nav-item a { color: var(--main-bg-color); }
-.white .navbar .nav-item button { color: var(--main-bg-color); }
+.white .navbar .hamburger i,
+.white .navbar .nav-item a,
+.white .navbar .nav-item a,
+.white .navbar .nav-item button,
 .white .navbar .sub-navbar .nav-item i { color: var(--main-bg-color); }
+.white .navbar .main-navbar .nav-item::after,
+.white .navbar .sub-navbar .locations::after,
 .white .navbar .main-navbar .active::after { background: var(--main-bg-color); }
 
 .trans { background: none; }
-.trans .blue { fill: #fff; }
+.trans .blue,
 .trans .black { fill: #fff; }
-.trans .navbar .hamburger i { color: #fff }
-.trans .navbar .nav-item a { color: #fff; }
-.trans .navbar .nav-item a { color: #fff; }
-.trans .navbar .nav-item button { color: #fff; }
+.trans .navbar .hamburger i,
+.trans .navbar .nav-item a,
+.trans .navbar .nav-item a,
+.trans .navbar .nav-item button,
 .trans .navbar .sub-navbar .nav-item i { color: #fff; }
+.trans .navbar .main-navbar .nav-item::after,
+.trans .navbar .sub-navbar .locations::after,
 .trans .navbar .main-navbar .active::after { background: #fff; }
 
 header .logo-container { height: 80%; }
@@ -139,7 +143,6 @@ header .navbar {
     transition: width 150ms ease-in-out;
     height: 4px;
     border-radius: 2px;
-    background: #fff;
 }
 
 .navbar .main-navbar .active::after {
