@@ -12,14 +12,14 @@
     --footer-bg-color: #f2f2f2;
     --main-width: 1536px;
     --img-size: 17.5rem;
-
+    --banner-height: 40rem;
 }
 
-@media(min-width: 992px) { :root { --main-width: 968px; } }
+@media(min-width: 992px) { :root { --main-width: 968px; --banner-height: 30rem} }
 
-@media(min-width: 1600px) { :root { --main-width: 1280px; } }
+@media(min-width: 1600px) { :root { --main-width: 1280px; --banner-height: 40rem } }
 
-@media(min-width: 1920px) { :root { --main-width: 1568px; --img-size: 20rem } }
+@media(min-width: 1920px) { :root { --main-width: 1568px; --img-size: 20rem; --banner-height: 50rem } }
 
 @media(max-width: 768px) { :root { --section-margin: 1rem; } }
 
@@ -29,7 +29,7 @@
 
 /* Slider */
 .slider-container {
-    height: 40rem;
+    height: var(--banner-height);
     overflow: hidden;
     position: relative;
     margin-bottom: var(--section-margin);
@@ -139,12 +139,12 @@
 
 /* Main */
 main {
-    margin-bottom: 5vh;
+    margin-bottom: 5rem;
 }
 
 /* Banner */
 .banner .banner-item {
-    height: 40rem;
+    height: var(--banner-height);
     margin-bottom: var(--section-margin);
 }
 .banner .first {

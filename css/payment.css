@@ -1,0 +1,395 @@
+/* Products Page CSS */
+
+/* Root Elements */
+:root {
+    --main-bg-color: #507DBC;
+    --main-font-color: #3d3f56;
+    --sub-bg-color: #AEEBDF;
+    --sub-font-color: #73B1BC;
+    --section-margin: 2rem;
+    --main-font: 'Raleway', sans-serif;
+    --footer-bg-color: #f2f2f2;
+    --img-size: 7.5rem;
+    --main-width: 1536px;
+}
+
+@media(min-width: 992px) {
+    :root { --main-width: 968px; }
+}
+
+@media(min-width: 1600px) {
+    :root { --main-width: 1280px; }
+}
+
+@media(min-width: 1920px) {
+    :root { --main-width: 1568px; --img-size: 10rem }
+}
+
+
+/* ----------------------------------------------------------- */
+
+
+header {
+    position: relative;
+    width: var(--main-width);
+    margin: auto;
+    padding: 0;
+}
+header .group {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+header .group h1 {
+    border-left: 2.5px solid var(--main-font-color);
+    padding: 0 1rem;
+}
+header .user {
+    font-size: 2rem;
+}
+header .group { height: 80%; }
+header .group .logo-container { height: 100%; }
+header .group .logo-container svg { height: 100%; }
+@media(max-width: 768px) {
+    header { width: 95%; height: 5rem; }
+    header .group { height: 60%; }
+    header .group .logo-container { height: 100%; }
+    header .group .logo-container svg { height: 100%; }
+    header .group { gap: 0; }
+    header .group h1 { font-size: 1.15rem; }
+}
+
+
+/* ----------------------------------------------------------- */
+
+
+/* Main */
+main {
+    width: var(--main-width);
+    margin: 5rem auto;
+    display: flex;
+    gap: var(--section-margin);
+}
+
+@media(max-width: 768px) {
+    main {
+        flex-direction: column;
+        width: 95%;
+        margin: 2.5rem auto;
+    }
+}
+
+/* ----------------------------------------------------------- */
+
+/* Cart Section */
+#cart-section { width: 65%; display: flex; gap: var(--section-margin); flex-direction: column; }
+
+#cart-section .section-title {
+    font-size: 28px;
+    display: flex;
+    align-items: center;
+    font-family: var(--main-font);
+}
+
+#cart-section .section-title span {
+    color: var(--sub-font-color);
+    font-size: 18px;
+    font-family: "Montserrat", sans-serif;
+    margin: 0 1rem;
+}
+
+#cart-section .section-title h5 {
+    margin: 0 var(--section-margin);
+    color: var(--sub-font-color);
+}
+
+#cart-section .cart-container {
+    display: flex;
+    flex-direction: column;
+    gap: var(--section-margin);
+    width: 100%;
+}
+
+.cart-container .item-container {
+    display: flex;
+    gap: 1rem;
+    height: var(--img-size);
+    width: 100%;
+}
+
+.item-container .product-img {
+    max-width: var(--img-size);
+    max-height: var(--img-size);
+}
+
+.item-container .item-desc {
+    height: 100%; 
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.item-desc .title {
+    font-size: 20px;
+    margin-bottom: 0.5rem;
+}
+
+.item-desc .price {
+    font-size: 18px;
+    color: var(--sub-font-color);
+    margin-bottom: 0.5rem;
+}
+
+.item-desc .item-cust {
+    display: flex;
+    justify-content: space-between;
+}
+
+.item-cust .size,
+.item-cust .amount {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.item-cust h5 {
+    font-size: 1rem;
+}
+
+.item-cust .size div {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.item-cust .size button {
+    width: 2.5rem;
+    height: 2.5rem;
+    border: 0.5px solid var(--main-font-color);
+    border-radius: 50%;
+    color: var(--main-font-color);
+    font-size: 1rem;
+    font-weight: bold;
+}
+.item-cust .size button:hover,
+.item-cust .amount button:hover {
+    background: var(--sub-font-color);
+    border: 0.5px solid var(--sub-font-color);
+    color: #fff;
+}
+.item-cust .size .active {
+    background: var(--sub-font-color);
+    border: 0.5px solid var(--sub-font-color);
+    color: #fff;
+}
+
+.item-cust .amount form {
+    height: 100%;
+    display: flex;
+    gap: 0.5rem;
+}
+.item-cust .amount form input {
+    width: 5rem;
+    height: 100%;
+    padding: 0.5rem 1rem;
+    height: 2.5rem;
+    font-size: 1.25rem;
+    border: 0.5px solid var(--main-font-color);
+    border-radius: 1.25rem;
+    text-align: center;
+    outline: none;
+}
+
+.item-cust .amount form input::-webkit-outer-spin-button,
+.item-cust .amount form input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+
+.item-cust .amount button {
+    width: 2.5rem;
+    height: 100%;
+    font-size: 1rem;
+    border-radius: 50%;
+    border: 0.5px solid var(--main-font-color);
+}
+
+.item-cust .amount button:hover > i {
+    color: #fff;
+}
+
+#cart-section .sub-total {
+    text-align: end;
+    font-family: var(--main-font);
+}
+
+#cart-section .sub-total span{
+    font-family: "Montserrat", sans-serif;
+    color: var(--sub-font-color);
+}
+
+@media(max-width: 768px) {
+    #cart-section {
+        width: 95%;
+    }
+    .item-desc .title { font-size: 18px; }
+    .item-desc .price { font-size: 18px; }
+    .item-cust { flex-direction: column; gap: 1rem; }
+    .item-cust .size,
+    .item-cust .amount {
+        gap: 0.5rem;
+        justify-content: space-between;
+    }
+    .item-cust .size div { gap: 0.5rem; }
+    .item-cust .size div button {
+        width: 2rem;
+        height: 2rem;
+        font-size: 14px;
+    }
+    .item-cust h5 {
+        font-size: 14px;
+    }
+    .item-cust .amount form input {
+        height: 2rem;
+        width: 3rem;
+        font-size: 14px;
+    }
+    .item-cust .amount form button {
+        width: 2rem;
+        height: 2rem;
+        font-size: 14px;
+    }
+}
+
+/* ----------------------------------------------------------- */
+
+
+/* Payment Section */
+#payment-section {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    gap: var(--section-margin);
+}
+
+#payment-section .discount {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+#payment-section .discount .discount-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--main-bg-color);
+    padding-left: 1rem;
+    border-radius: 4px;
+    border: 2px solid var(--main-bg-color);
+}
+
+#payment-section .discount .discount-box h1 {
+    color: #fff;
+    font-size: 20px;
+    font-family: var(--main-font);
+}
+
+#payment-section .discount .discount-box button {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    color: var(--main-bg-color);
+    padding: 0 1rem;
+    font-size: 20px;
+    font-family: var(--main-font);
+    font-weight: bold;
+    border-radius: 0 4px 4px 0;
+}
+
+#payment-section .discount .coupon {
+    background: var(--sub-font-color);
+    border: 2px solid var(--sub-font-color);
+}
+
+#payment-section .discount .coupon button { color: var(--sub-font-color); }
+
+#payment-section .total-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.total-container .title {
+    font-family: var(--main-font);
+    font-size: 28px;
+}
+
+.total-container .payment-methods {
+    display: flex;
+    gap: 0.5rem;
+    flex-direction: column;
+}
+
+.total-container .payment-methods h3 {
+    font-size: 1.15rem;
+    font-weight: 100;
+}
+
+.total-container .payment-methods form {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.total-container .payment-methods form label i {
+    font-size: 48px;
+}
+
+
+.total-container .select {
+    border: 0.5px solid var(--main-font-color);
+    padding: 0.5rem;
+    height: 2.5rem;
+    outline: none;
+    font-size: 1.15rem;
+}
+
+.total-container .order-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.total-container .order-container div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.total-container .order-container .total-value {
+    text-align: end;
+    font-size: 1.5rem;
+}
+
+.total-container .proceed-btn {
+    font-family: var(--main-font);
+    font-weight: bold;
+    font-size: 1.5rem;
+    padding: 0.5rem 0;
+    background: var(--main-bg-color);
+    color: #fff;
+}
+
+@media(max-width: 768px) {
+    #payment-section .discount .discount-box {
+        height: 4rem;
+    }
+    #payment-section .discount .discount-box h1 {
+        font-size: 16px;
+    }
+    #payment-section .discount .discount-box button {
+        height: 100%;
+    }
+}

@@ -8,190 +8,176 @@
     <meta name="language" content="English">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Payment</title>
+    <link rel="icon" type="image/png" href="assets/favicon.png"/>
+	<link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/payment.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Raleway&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/60fa06b939.js" crossorigin="anonymous"></script>
+    <title>Payment | JUR UR Bakery</title>
 </head>
 <body>
-    <!-- Header -->
     <header>
-        <!-- Logo -->
-        <img src="" alt="logo">
-        <!-- Navbar -->
-        <nav>
-            <div>
-                <h5>Locations</h5>
-                <ul>
-                    <li>Search</li>
-                    <li><button>Cart</button></li>
-                    <li><a href="account.html">User</a></li>
-                </ul>
-            </div>
-            <ul>
-                <li><a href="products.html">CAKE</a></li>
-                <li><a href="products.html">BAKERY</a></li>
-                <li><a href="products.html">BEVERAGE</a></li>
-                <li><a href="products.html">HOLYDAY</a></li>
-                <li><a href="products.html">CUSTOM</a></li>
-            </ul>
-        </nav>
+        <div class="group">
+            <!-- Logo -->
+            <a class="logo-container" href="index.html">
+                <svg id="Component_6_1" data-name="Component 6 – 1" xmlns="http://www.w3.org/2000/svg" width="171" height="78" viewBox="0 0 171 78">
+                    <text id="JUR_UR" data-name="JUR UR" transform="translate(0 45)" fill="#507dbc" font-size="48" font-family="Raleway" font-weight="800"><tspan x="0" y="0">JUR UR</tspan></text>
+                    <text id="BAKERY" transform="translate(68 72)" font-size="24" font-family="Montserrat-Regular, Montserrat"><tspan x="0" y="0">BAKERY</tspan></text>
+                    <text id="SINCE_1987" data-name="SINCE 1987" transform="translate(12 62)" fill="#707070" font-size="10" font-family="Montserrat-Regular, Montserrat"><tspan x="0" y="0">SINCE 1987</tspan></text>
+                </svg>            
+            </a>
+            <h1>PAYMENT</h1>
+        </div>
+        <a class="user"><i class="fas fa-user-circle"></i></a>
     </header>
-
     <!-- Main -->
-    <main>
+    <main id="payment">
         <!-- Products Section -->
-        <section>
+        <section id="cart-section">
             <!-- Section Title -->
-            <div>
-                <h1>MY CART</h1>
-                <h5>3 products</h5>
-            </div>
+            <h1 class="section-title">MY CART: <span>3 products</span></h1>
             <!-- Products List -->
-            <div>
+            <div class="cart-container">
                 <!-- Product Information -->
-                <div>
+                <div class="item-container">
                     <!-- Image -->
-                    <img src="" alt="product-img">
-                    <div>
+                    <img class="product-img" src="assets/img/lel-removebg-preview.png" alt="product-img">
+                    <div class="item-desc">
                         <!-- Title -->
-                        <div>
-                            <h1>BIRTHDAY CAKE</h1>
-                            <button>CLOSE</button>
-                        </div>
+                        <h3 class="title">BIRTHDAY CAKE</h3>
                         <!-- Price -->
-                        <h5>&#36; 6.99</h5>
-                        <!-- Description -->
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste optio nihil quod, sequi nisi aspernatur asperiores magni odit. Eius, ullam.</p>
+                        <h5 class="price">&#36; 6.99</h5>
                         <!-- Customization -->
-                        <div>
-                            <h5>SIZE</h5>
-                            <div>
-                                <button type="button">7</button>
-                                <button type="button">8</button>
-                                <button type="button">9</button>
-                                <button type="button">10</button>
+                        <div class="item-cust">
+                            <div class="size">
+                                <h5>SIZE</h5>
+                                <div>
+                                    <button class="active" type="button">7</button>
+                                    <button type="button">8</button>
+                                    <button type="button">9</button>
+                                    <button type="button">10</button>
+                                </div>
                             </div>
-                        </div>
-                        <div>
-                            <h5>AMOUNTS</h5>
-                            <form>
-                                <input type="number" max="10" min="1">
-                                <button type="button">+</button>
-                                <button type="button">-</button>
-                            </form>
+                            <div class="amount">
+                                <h5>AMOUNTS</h5>
+                                <form>
+                                    <input type="number" value="1" max="10" min="1">
+                                    <button class="plus" type="button"><i class="fas fa-plus"></i></button>
+                                    <button class="minus" type="button"><i class="fas fa-minus"></i></button>
+                                </form>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <!-- Section Title -->
-            <div>
-                <h1>MY CART</h1>
-                <h5>3 products</h5>
-            </div>
-            <!-- Products List -->
-            <div>
+                <hr color="#ccc">
+                <!-- Products List -->
+            <div class="cart-container">
                 <!-- Product Information -->
-                <div>
+                <div class="item-container">
                     <!-- Image -->
-                    <img src="" alt="product-img">
-                    <div>
+                    <img class="product-img" src="assets/img/lel-removebg-preview.png" alt="product-img">
+                    <div class="item-desc">
                         <!-- Title -->
-                        <div>
-                            <h1>BIRTHDAY CAKE</h1>
-                            <button>CLOSE</button>
-                        </div>
+                        <h3 class="title">BIRTHDAY CAKE</h3>
                         <!-- Price -->
-                        <h5>&#36; 6.99</h5>
-                        <!-- Description -->
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste optio nihil quod, sequi nisi aspernatur asperiores magni odit. Eius, ullam.</p>
+                        <h5 class="price">&#36; 6.99</h5>
                         <!-- Customization -->
-                        <div>
-                            <h5>SIZE</h5>
-                            <div>
-                                <button type="button">7</button>
-                                <button type="button">8</button>
-                                <button type="button">9</button>
-                                <button type="button">10</button>
+                        <div class="item-cust">
+                            <div class="size">
+                                <h5>SIZE</h5>
+                                <div>
+                                    <button class="active" type="button">7</button>
+                                    <button type="button">8</button>
+                                    <button type="button">9</button>
+                                    <button type="button">10</button>
+                                </div>
                             </div>
-                        </div>
-                        <div>
-                            <h5>AMOUNTS</h5>
-                            <form>
-                                <input type="number" max="10" min="1">
-                                <button type="button">+</button>
-                                <button type="button">-</button>
-                            </form>
+                            <div class="amount">
+                                <h5>AMOUNTS</h5>
+                                <form>
+                                    <input type="number" value="1" max="10" min="1">
+                                    <button class="plus" type="button"><i class="fas fa-plus"></i></button>
+                                    <button class="minus" type="button"><i class="fas fa-minus"></i></button>
+                                </form>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <!-- Section Title -->
-            <div>
-                <h1>MY CART</h1>
-                <h5>3 products</h5>
-            </div>
-            <!-- Products List -->
-            <div>
+                <hr color="#ccc">
+                <!-- Products List -->
+            <div class="cart-container">
                 <!-- Product Information -->
-                <div>
+                <div class="item-container">
                     <!-- Image -->
-                    <img src="" alt="product-img">
-                    <div>
+                    <img class="product-img" src="assets/img/lel-removebg-preview.png" alt="product-img">
+                    <div class="item-desc">
                         <!-- Title -->
-                        <div>
-                            <h1>BIRTHDAY CAKE</h1>
-                            <button>CLOSE</button>
-                        </div>
+                        <h3 class="title">BIRTHDAY CAKE</h3>
                         <!-- Price -->
-                        <h5>&#36; 6.99</h5>
-                        <!-- Description -->
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste optio nihil quod, sequi nisi aspernatur asperiores magni odit. Eius, ullam.</p>
+                        <h5 class="price">&#36; 6.99</h5>
                         <!-- Customization -->
-                        <div>
-                            <h5>SIZE</h5>
-                            <div>
-                                <button type="button">7</button>
-                                <button type="button">8</button>
-                                <button type="button">9</button>
-                                <button type="button">10</button>
+                        <div class="item-cust">
+                            <div class="size">
+                                <h5>SIZE</h5>
+                                <div>
+                                    <button class="active" type="button">7</button>
+                                    <button type="button">8</button>
+                                    <button type="button">9</button>
+                                    <button type="button">10</button>
+                                </div>
                             </div>
-                        </div>
-                        <div>
-                            <h5>AMOUNTS</h5>
-                            <form>
-                                <input type="number" max="10" min="1">
-                                <button type="button">+</button>
-                                <button type="button">-</button>
-                            </form>
+                            <div class="amount">
+                                <h5>AMOUNTS</h5>
+                                <form>
+                                    <input type="number" value="1" max="10" min="1">
+                                    <button class="plus" type="button"><i class="fas fa-plus"></i></button>
+                                    <button class="minus" type="button"><i class="fas fa-minus"></i></button>
+                                </form>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
             <!-- Sub Total -->
-            <h1>SUB-TOTAL: <span>&#36; 17.89</span></h1>
+            <h2 class="sub-total">SUB-TOTAL: <span>&#36; 17.89</span></h2>
         </section>
         <!-- Payment Section -->
-        <section>
+        <section id="payment-section">
             <!-- Discount -->
-            <div>
-                <img src="" alt="card-img">
-                <h1>Have a gift card?</h1>
-                <button type="button">USE</button>
-            </div>
-            <div>
-                <img src="" alt="card-img">
-                <h1>Have a coupon code?</h1>
-                <button type="button">USE</button>
+            <div class="discount">
+                <div class="discount-box gift">
+                    <img src="assets/img/gift-card.png" alt="card-img">
+                    <h1>HAVE A GIFT CARD?</h1>
+                    <button type="button">USE</button>
+                </div>
+                <div class="discount-box coupon">
+                    <img src="assets/img/voucher.png" alt="card-img">
+                    <h1>HAVE A COUPON CODE?</h1>
+                    <button type="button">USE</button>
+                </div>
             </div>
             <!-- Total -->
-            <div>
-                <h1>TOTAL</h1>
+            <div class="total-container">
+                <h1 class="title">TOTAL</h1>
+                <!-- Payment Methods -->
+                <div class="payment-methods">
+                    <h3>PAYMENT METHOD: </h3>
+                    <form>
+                        <input type="radio" name="payment" id="visa"><label for="visa"><i class="fab fa-cc-visa"></i></label>
+                        <input type="radio" name="payment" id="paypal"><label for="paypal"><i class="fab fa-cc-paypal"></i></label>
+                        <input type="radio" name="payment" id="amex"><label for="amex"><i class="fab fa-cc-amex"></i></label>
+                        <input type="radio" name="payment" id="mastercard"><label for="mastercard"><i class="fab fa-cc-mastercard"></i></label>
+                    </form>
+                </div>
                 <!-- Delivery -->
-                <select name="delivery" id="delivery">
-                    <option value="Within the country">Within the country</option>
-                    <option value="Overseas">Overseas</option>
-                    <option value="Non delivery">Non delivery</option>
+                <select class="select" name="delivery" id="delivery">
+                    <option selected="selected" disabled value="default">DELIVERY METHOD</option>
+                    <option value="Within the country">WITHIN THE COUNTRY</option>
+                    <option value="Overseas">INTERNATIONAL</option>
+                    <option value="Non delivery">NON DELIVERY</option>
                 </select>
                 <!-- Total Counting -->
-                <div>
+                <div class="order-container">
                     <div>
                         <p>Sub-total</p>
                         <p>&#36; 17.89</p>
@@ -204,21 +190,11 @@
                         <p>Sub-total</p>
                         <p><span>-</span> &#36; 1.89</p>
                     </div>
-                    <hr>
-                    <p>&#36; 9.09</p>
+                    <hr color="#ccc">
+                    <h3 class="total-value">&#36; 9.09</h3>
                 </div>
                 <!-- Proceed Payment Button -->
-                <button type=button>PROCEED PAYMENT</button>
-                <!-- Payment Methods -->
-                <div>
-                    <h5>WE ACCEPT:</h5>
-                    <div>
-                        <img src="" alt="paypal">
-                        <img src="" alt="mastercard">
-                        <img src="" alt="american-express">
-                        <img src="" alt="visa">
-                    </div>
-                </div>
+                <button class="proceed-btn" type=button>PROCEED PAYMENT</button>
             </div>
         </section>
     </main>
@@ -226,49 +202,49 @@
     <!-- Footer -->
     <footer>
         <!-- Main Footer -->
-        <div>
-            <div>
-                <h1>ABOUT US</h1>
-                <a href="about.html">Introduction</a>
-                <a href="about.html">Goal</a>
-                <a href="about.html">Timeline</a>
-                <a href="about.html">Achievements</a>
-            </div>
-            <div>
-                <h1>PRODUCTS</h1>
-                <a href="products.html">Cake</a>
-                <a href="products.html">Bakery</a>
-                <a href="products.html">Beverage</a>
-                <a href="products.html">Holiday</a>
-            </div>
-            <div>
-                <h1>ONLINE</h1>
-                <a href="about.html">Delivery Area</a>
-                <a href="about.html">Term and Condition</a>
-                <a href="about.html">Security</a>
-                <a href="about.html">How to Order</a>
-            </div>
-            <div>
-                <h1>ACCOUNT</h1>
-                <a href="login.html">Login</a>
-                <a href="signup.html">Register</a>
-            </div>
-            <div>
-                <h1>CONTACT</h1>
-                <a href="about.html">Contact Us</a>
-                <a href="about.html">Feedback</a>
-                <a href="about.html">Phone: 70045556</a>
-                <a href="about.html">Email: order@jurur.mn</a>
-            </div>
+        <div class="main-footer-container">
+            <ul class="footer-items-container">
+                <h1 class="item-title">ABOUT US</h1>
+                <li class="item"><a href="about.html">Introduction</a></li>
+                <li class="item"><a href="about.html">Goal</a></li>
+                <li class="item"><a href="about.html">Timeline</a></li>
+                <li class="item"><a href="about.html">Achievements</a></li>
+            </ul>
+            <ul class="footer-items-container">
+                <h1 class="item-title">PRODUCTS</h1>
+                <li class="item"><a href="products.html">Cake</a></li>
+                <li class="item"><a href="products.html">Bakery</a></li>
+                <li class="item"><a href="products.html">Beverage</a></li>
+                <li class="item"><a href="products.html">Holiday</a></li>
+            </ul>
+            <ul class="footer-items-container">
+                <h1 class="item-title">ONLINE</h1>
+                <li class="item"><a href="about.html">Delivery Area</a></li>
+                <li class="item"><a href="about.html">Term and Condition</a></li>
+                <li class="item"><a href="about.html">Security</a></li>
+                <li class="item"><a href="about.html">How to Order</a></li>
+            </ul>
+            <ul class="footer-items-container">
+                <h1 class="item-title">ACCOUNT</h1>
+                <li class="item"><a href="login.html">Login</a></li>
+                <li class="item"><a href="signup.html">Register</a></li>
+            </ul>
+            <ul class="footer-items-container">
+                <h1 class="item-title">CONTACT</h1>
+                <li class="item"><a href="about.html">Contact Us</a></li>
+                <li class="item"><a href="about.html">Feedback</a></li>
+                <li class="item"><a href="about.html">Phone: 70045556</a></li>
+                <li class="item"><a href="about.html">Email: order@jurur.mn</a></li>
+            </ul>
         </div>
         <!-- Social Links -->
-        <div>
-            <a href="http://www.facebook.com">Facebook</a>
-            <a href="http://www.twitter.com">Twitter</a>
-            <a href="http://www.instagram.com">Instagram</a>
+        <div class="social-links">
+            <a href="http://www.facebook.com"><i class="fab fa-facebook-square"></i></a>
+            <a href="http://www.twitter.com"><i class="fab fa-twitter-square"></i></a>
+            <a href="http://www.instagram.com"><i class="fab fa-instagram-square"></i></a>
         </div>
         <!-- Copyright Notice -->
-        <h6>Copyright &copy; www.jurur.mn. All right reserved.</h6>
+        <h6 class="copy-msg">Copyright &copy; www.jurur.mn. All right reserved.</h6>
     </footer>
 </body>
 </html>

@@ -33,8 +33,9 @@
 /* Ads Banner */
 .ads-banner {
     width: 100%;
-    background: url("../assets/img/sub-banner01.jpg");
-    margin: 0 auto 5vh;
+    background: url("../assets/img/sub-banner03.jpg") no-repeat;
+    background-size: cover;
+    margin: 0 auto 3rem;
     height: 25rem;
     position: relative;
     display: flex;
@@ -72,7 +73,7 @@
 .history {
     display: flex;
     margin: auto;
-    height: 5vh;
+    height: 3rem;
     width: var(--main-width);
     list-style-type: none;
 }
@@ -97,7 +98,7 @@
 /* Main */
 main {
     width: var(--main-width);
-    margin: 0 auto 5vh;
+    margin: 0 auto 5rem;
     display: flex;
 }
 
@@ -121,11 +122,9 @@ main .group {
 
 .group-item .active {
     padding: 0.5rem 1.5rem;
-    background: var(--main-bg-color);
+    background: #f2f2f2;
     border-radius: 4px;
 }
-
-.group-item ul .active a { color: #fff; }
 
 .group-item ul li {
     margin-top: 0.5rem;
@@ -137,8 +136,6 @@ main .group {
     background: #f2f2f2;
     border-radius: 4px;
 }
-
-.group-item ul .active:hover { background: var(--main-bg-color); }
 
 @media(max-width: 768px) {
     main .group { width: 100%; padding: 0; }
@@ -298,11 +295,9 @@ main .pagination {
 }
 
 .pagination ul .active {
-    background: var(--main-bg-color);
+    background: #f2f2f2;
     border-radius: 4px;
 }
-
-.pagination ul .active a { color: #fff; }
 
 .pagination button { font-size: 1rem; }
 
