@@ -17,108 +17,232 @@
 main {
     margin-bottom: 5vh;
 }
-.login-item{
-    
-    display: flex;
-    justify-content: space-around;
+.wave{
+    position: fixed;
+    height: 100%;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+}
+.signup{
+    align-items: center;
+}
+.signup h2{
+    color: #fff;
+    font-size: 30px;
+    margin-top: 100px;
+    margin-left: 150px;
+}
+.signup .btn1{
+    display: block;
+    width: 300px;
+    height: 50px;
+    border-radius: 25px;
+    margin: 2rem 0;
+    margin-left: 150px;
+    font-size: 20px;
+    outline: none;
+    border:none;
+    background-color: #fff;
+    color: var(--main-bg-color);
+    cursor: pointer;
+    background-size: 200%;
+    text-transform: uppercase;
+}
+.login-item{ 
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 7rem;
+    padding : 0 2rem;
 }
 .login-item .login-item-img{
-    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
 }
 .login-item-img .login-img{
-    width: 80%;
-    height: 90%;
-    display: block;
-    margin-left: 300px;
-    padding-top: 2vh;
+    margin-top: -300px;
+    width: 700px;
 }
-.login-item .login-box{
-    width: 50%;
-    height: 50%;
-    background: #fff;
-    margin-top: 70px;
-    margin-left : 300px;
-    padding-left: 10px;
+.profile{
+    width: 100px;
+    border-radius: 50%;
+
 }
-.login-box .title {
+.login-item .login-container{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-left: 50px;
+    margin-top: -600px;
+}
+form{
+    width: 360px;
+}
+.login-container .title {
     color: var(--main-bg-color);
-    font-family: var(--main-font);
+    font-family: var(--main-font); 
     font-size: 48px;
+    margin: 15px 0;
 }
 
-.login-box input{
-    width: 30%;
-    margin-bottom: 30px;
-}
-
-.login-box input[type="text"], input[type="password"]  {
-    border: none;
+.login-container .input-div{
+    position: relative;
+    display: grid;
+    grid-template-columns: 7% 93%;
+    margin: 30px 0;
+    padding: 5px 0;
     border-bottom: 1px solid #000;
-    background: transparent;
-    outline: none;
-    height: 40px;
-    font-size: 20px;
 }
-.login-box i.fas {
-    padding-bottom: 10px;
-    border-bottom: 1px solid #000;
-    padding-right: 10px
-}
-.login-box input[type="submit"]{
-    border: none;
-    background: var(--main-bg-color);
-    height: 35px;
-    width: 34%;
-    font-size: 20px;
-    color: #fff;
-    margin-top: 40px;
-    border-radius: 10px;
-}
-.login-box a.pass{
+.input-div.focus div h5{
+    top: -5px;
     font-size: 15px;
-    text-align: right;     
 }
-.login-item-img a.account{
-    margin-left: 540px;
-    font-size: 20px; margin-top: 50px;
+.login-container .input-div.one{
+    margin-top: 70px;
 }
-.login-box h5{
+.login-container .input-div.two{
+    margin-bottom: 4px;
+}
+.login-div i.fas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+i.fas{
+    color: var(--main-font-color);
+    margin-top: 15px;
+}
+.input-div > div{
+    position: relative;
+    height: 45px;
+}
+.input-div > div h5{
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #999;
     font-size: 20px;
-    margin-top: 40px;
-    margin-left: 60px;
 }
-.login-box i.fa{
-   padding: 10px 60px 10px 10px;
-   font-size: 25px;
-   width: 50px;
-   text-align: center;
-   text-decoration: none;
-   margin: 5px 5px;
-   border-radius: 10%;
+.input-div .input{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    border:none;
+    outline: none;
+    background: none;
+    padding: 0.5rem 0.7rem;
+    font-size: 20px;
 }
-.login-box i.fa:hover {
-    opacity: 0.7;
+.login-container a.pass{
+    display:block;
+    text-align: right;
+    text-decoration: none;
+    font-size: 15px;
 }
-.login-box i.fa-facebook {
-  background: #3B5998;
-  color: white;
+a.pass:hover{
+    color: var(--main-bg-color);
+}
+.login-container .btn{
+    display: block;
+    width: 100%;
+    height: 50px;
+    border-radius: 25px;
+    margin: 3rem 0;
+    font-size: 20px;
+    outline: none;
+    border:none;
+    background-image: linear-gradient(to right, #507dbc, #4370af, #628bc3);
+    cursor: pointer;
+    background-size: 200%;
+    color: #fff;
+    transition: .5s;
+    text-transform: uppercase;
+}
+.btn:hover{
+    background-position: right;
+}
+.platforms h5{
+    font-size: 15px;
 }
 
-.login-box i.fa-twitter {
-  background: #55ACEE;
-  color: white;
+.platforms ul{
+    position: absolute;
+    display: flex;
 }
-.login-box i.fa-instagram {
-  background: #833AB4;
-  color: white;
+.platforms ul li{
+    list-style: none;
+    margin: 30px 30px;
+}
+.platforms ul li .fa{
+    font-size: 30px;
+    line-height: 60px;
+    transition: .6s;
+    color: #000;
+}
+.platforms ul li a{
+    position: relative;
+    display: block;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color:#e6e6e6;
+    text-align: center;
+    transition: .6s;
+}
+.platforms ul li a:hover{
+    transform: translate(0, -10px);
+}
+.platforms ul li:nth-child(1) a:hover{
+    background-color: #3b5999;
+}
+.platforms ul li:nth-child(2) a:hover{
+    background-color: #55acee;
+}
+.platforms ul li:nth-child(3  ) a:hover{
+    background-color: #e4405f;
+}
+@media(max-width: 1050px ){
+    form{
+        width: 290px;
+    }
+    form h2{
+        font-size: 2.4rem;
+        margin: 8px 0;
+    }
+    .login-item-img{
+        width: 400px;
+    }
+    .login-container{
+        grid-gap: 5rem;
+    }
 }
 @media(max-width: 768px){
-    .login .login-item{ align-items: center}
-    .logi-item  .login-item-img { display: none }
-    .login-item .login-box { width: 100%; margin: 5vh; }
-    .login-box .title { font-size: 36px; }
-    .login-box input { font-size: 20px; }
+    .wave{
+        display: none;
+    }
+    .login-img{
+        display: none;
+    }
+    .login-item{
+        grid-template-columns: 1fr;
+    }
     
+    .login-container{
+        justify-content: center;
+        margin-top: -50px;
+    }
+    .signup{
+        display: none;
+    }
+    .profile{
+        margin-top: 400px;
+    }
 }
 /* Footer */
 footer {
