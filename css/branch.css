@@ -138,6 +138,9 @@
     .br{
         width: 400px;
     }
+    .img{
+        width: 400px;
+    }
     .branch-container h2{
         font-size: 24px;
     }
@@ -154,6 +157,9 @@
         width: 95%;
     }
     .br{
+        width: 500px;
+    }
+    .img{
         width: 500px;
     }
     .branch-container h2{
@@ -173,6 +179,9 @@
         margin-left: -110px;
     }
     .br{
+        width: 400px;
+    }
+    .img{
         width: 400px;
     }
     .branch-container h2{
