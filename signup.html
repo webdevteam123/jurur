@@ -1,135 +1,124 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Sign Up - Jur Ur Bakery</title>
     <meta charset="UTF-8">
     <meta name="title" content="Sign up">
     <meta name="description" content="Create new account">
     <meta name="language" content="English">
     <meta name="keywords" content="sign up, signup, User, jur ur, jurur">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="assets/favicon.png"/>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/signup.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Raleway&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/60fa06b939.js" crossorigin="anonymous"></script>
+    <title>Бүртгүүлэх | Жүр Үр Бэйкери</title>
 </head>
 <body>
-    <header>
-        <img src="" alt="logo">
-        <nav>
-            <div>
-                <h5>Locations</h5>
-                <ul>
-                    <li><input type="text" name="text" placeholder="Search"></li>
-                    <li><a href="payment.html">Cart</a></li>
-                    <li><a href="account.html">User</a></li>
-                </ul>
-                <hr>
-            </div>
-            <div>
-                <ul>
-                    <li><a href="product.html">CAKE</a></li>
-                    <li><a href="product.html">BAKERY</a></li>
-                    <li><a href="product.html">BEVERAGE</a></li>
-                    <li><a href="product.html">HOLYDAY</a></li>
-                    <li><a href="product.html">CUSTOM</a></li>
-                </ul>
-            </div>
-        </nav>
-    </header>>
     <main>
-        <section>
-            <h2>CREATE YOUR ACCOUNT</h2>
-                <div>
-                    <form>
-                        <div>
-                            <input type="text" name="First name" placeholder="First name">
-                            <input type="text" name="Last name" placeholder="Last name">
+        <section class="signup">
+            <img src="assets/img/wave2.png" class="wave">
+            <div class="login">
+                <h2>Хэрэглэгч нэвтрэх</h2>
+                <a href="login.html"><input type="submit" class="btn1" value="Нэвтрэх" ></a>
+            </div>
+            <div class="signup-item">
+                <div class="signup-container">
+                    <form action="signup.html">
+                        <img class="profile" src="assets/img/cupcake.png">
+                        <h2 class="title">Бүртгүүлэх</h2>
+                        <div class="input-div one focus">
+                            <i class="fas fa-user"></i>
+                            <div>
+                                <h5>Нэвтрэх нэр</h5>
+                                <input class="input" type="text">
+                            </div>
                         </div>
-                        <div>
-                            <input type="text" name="Email"  placeholder="Email           @example.com">
-                            <p>You can use letters, numbers & periods</p>
+                        <div class="input-div two focus">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h5>Имэйл хаяг</h5>
+                                <input class= "input" type="text" name="">
+                            </div>
                         </div>
-                        <div>
-                            <select name="Country">
-                                <option value="Mongolia">Mongolia</option>
-                                <option value="United States">United States</option>
-                                <option value="United Kingdom">United Kingdom</option>
-                                <option value="Canada">Canada</option>
-                                <option value="India">India</option>
-                                <option value="China">China</option>
-                                <option value="Austria">Austria</option>
-                                <option value="Australia">Australia</option>
-                                <option value="South Korea">South Korea</option>
-                                <option value="Indonesia">Indonesia</option>
-                                <option value="Russian">Russian</option>
-                                <option value="Japan">Japan</option>
-                                <option value="Singapore">Singapore</option>
-                                <option value="Belgium">Belgium</option>
-                                <option value="Brazil">Brazil</option>
-                                <option value="France">France</option>
-                            </select><br>
-                            <input type="text" name="City" placeholder="City">
-                            <input type="text" name="State" placeholder="State"><br>
-                            <input type="text" name="Street address" placeholder="Street address"><br>
-                            <input type="number" name="Phone number" placeholder="Phone number">
+                        
+                        <div class="input-div four focus">
+                            <i class="fas fa-lock"></i>
+                            <div>
+                                <h5>Нууц үг</h5>
+                                <input class= "input" type="Password" name="">
+                            </div>
                         </div>
-                        <div>
-                            <input type="text" name="password" placeholder="Password">
-                            <input type="text" name="confirm" placeholder="Confirm"><br>
-                            <p>Use 8 or more characters with a mix of letters, numbers</p>
-                            <hr>
+                        <div class="input-div five focus">
+                            <i class="fas fa-lock"></i>
+                            <div>
+                                <h5>Нууц үг баталгаажуулах</h5>
+                                <input class= "input" type="Password" name="">
+                            </div>
                         </div>
-                        <div>
-                            <input type="submit" name="submit" value="Create account" ><br>
-                            <p>Oryou can join with</p>
-                            <a href="#">Facebook</a>
-                            <a href="#">Twitter</a>
-                            <a href="#">Instagram</a>
+                        <input type="submit" class="btn" value="Бүртгүүлэх" >
+                        <div class="platforms">
+                            <h5>Эсвэл сошиал хаягаараа бүртгүүлэх</h5>
+                            <ul>
+                                <li><a href="http://www.facebook.com"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="http://www.twitter.com"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="http://www.instagram.com"><i class="fa fa-instagram"></i></a></li>
+                            </ul>
                         </div>
                     </form>
                 </div>
-        </section>
-    </main>
+            <div class="signup-item-img">
+                <img class="signup-img" src="assets/svg/signup.svg" alt="section-img"><br>
+            </div>
+        </div>
+    </section>
+</main>                
     <footer>
-        <div>
-            <div>
-                <h2>ABOUT US</h2>
-                <a href="about.html">Introduction</a><br>
-                <a href="about.html">Goal</a><br>
-                <a href="about.html">Timeline</a><br>
-                <a href="about.html">Achievements</a><br>
-            </div>
-            <div>
-                <h2>PRODUCTS</h2>
-                <a href="products.html">Cake</a><br>
-                <a href="products.html">Bakery</a><br>
-                <a href="products.html">Beverage</a><br>
-                <a href="products.html">Holiday</a><br>
-            </div>
-            <div>
-                <h2>ONLINE</h2>
-                <a href="#">Delivery Area</a><br>
-                <a href="#">Term and Condition</a><br>
-                <a href="#">Security</a><br>
-                <a href="#">How to Order</a><br>
-            </div>
-            <div>
-                <h2>ACCOUNT</h2>
-                <a href="login.html">Login</a><br>
-                <a href="signup.html">Register</a><br>
-            </div>
-            <div>
-                <h2>CONTACT</h2>
-                <a href="#">Contact Us</a><br>
-                <a href="#">Feedback</a><br>
-                <a href="#">Phone: 70045556</a><br>
-                <a href="#">Email: order@jurur.mn</a><br>
-            </div>
+        <!-- Main Footer -->
+        <div class="main-footer-container">
+            <ul class="footer-items-container">
+                <h1 class="item-title">БИДНИЙ ТУХАЙ</h1>
+                <li class="item"><a href="about.html">Танилцуулга</a></li>
+                <li class="item"><a href="about.html">Зорилго үнэт зүйлс</a></li>
+                <li class="item"><a href="about.html">Он цагийн хэлхээс</a></li>
+                <li class="item"><a href="about.html">Бидний амжилтууд</a></li>
+            </ul>
+            <ul class="footer-items-container">
+                <h1 class="item-title">БҮТЭЭГДЭХҮҮН ҮЙЛЧИЛГЭЭ</h1>
+                <li class="item"><a href="products.html">Бялуун бүтээгдэхүүн</a></li>
+                <li class="item"><a href="products.html">Бэйкери бүтээгдэхүүн</a></li>
+                <li class="item"><a href="products.html">Ундааны төрөл</a></li>
+                <li class="item"><a href="products.html">Баярын бүтээгдэхүүн</a></li>
+            </ul>
+            <ul class="footer-items-container">
+                <h1 class="item-title">ОНЛАЙН ЗАХИАЛГА</h1>
+                <li class="item"><a href="about.html">Хүргэлтийн бүс</a></li>
+                <li class="item"><a href="about.html">Үйлчилгээний төрөл</a></li>
+                <li class="item"><a href="about.html">Нууцлал</a></li>
+                <li class="item"><a href="about.html">Хэрхэн захиалах вэ?</a></li>
+            </ul>
+            <ul class="footer-items-container">
+                <h1 class="item-title">МИНИЙ БҮРТГЭЛ</h1>
+                <li class="item"><a href="login.html">Нэвтрэх</a></li>
+                <li class="item"><a href="signup.html">Бүртгүүлэх</a></li>
+            </ul>
+            <ul class="footer-items-container">
+                <h1 class="item-title">ХОЛБОО БАРИХ</h1>
+                <li class="item"><a href="about.html">Холбоо барих</a></li>
+                <li class="item"><a href="about.html">Санал хүсэлт</a></li>
+                <li class="item"><a href="about.html">Утас: 70045556</a></li>
+                <li class="item"><a href="about.html">Имэйл: order@jurur.mn</a></li>
+            </ul>
         </div>
-        <div>
-            <a href="#">Facebook</a>
-            <a href="#">Twitter</a>
-            <a href="#">Instagram</a>
+        <!-- Social Links -->
+        <div class="social-links">
+            <a href="http://www.facebook.com"><i class="fab fa-facebook-square"></i></a>
+            <a href="http://www.twitter.com"><i class="fab fa-twitter-square"></i></a>
+            <a href="http://www.instagram.com"><i class="fab fa-instagram-square"></i></a>
         </div>
-        <h6>Copyright &copy; www.jurur.mn. All right reserved.</h6>
+        <!-- Copyright Notice -->
+        <h6 class="copy-msg">Copyright &copy; www.jurur.mn. All right reserved.</h6>
     </footer>
 </body>
-</html>>
+</html>
 

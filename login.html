@@ -1,109 +1,99 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Log In - Jur Ur Bakery</title>
 	<meta charset="UTF-8">
 	<meta name="title" content="Log in">
-    	<meta name="description" content="User log in">
-    	<meta name="language" content="English">
-    	<meta name="keywords" content="login, log in, User, jur ur, jurur">
-    	<meta name="viewport" content="width=device-width, initial-scale=1">
-    	<link rel="stylesheet" href="./css/style.css">
-    	<link rel="stylesheet" href="./css/login.css">
-    	<link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Raleway&family=Raleway:wght@400;900&display=swap" rel="stylesheet">
-    	<script src="https://kit.fontawesome.com/60fa06b939.js" crossorigin="anonymous"></script>
-
+    <meta name="description" content="User log in">
+    <meta name="language" content="English">
+    <meta name="keywords" content="login, log in, User, jur ur, jurur">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="assets/favicon.png"/>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/login.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Raleway&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/60fa06b939.js" crossorigin="anonymous"></script>
+    <title>Нэвтрэх | Жүр Үр Бэйкери</title>
 </head>
 <body>
-	<header class=header>
-        <!-- Logo -->
-        <div class="logo-container">
-            <a class="sub-nav-item location-icon"> <i class="fas fa-map-marker-alt"></i></a> 
-            <img class="logo" src="./assets/svg/logo.svg" alt="logo">
-            <a class="sub-nav-item location-icon" href="account.html"><i class="fa fa-user"></i></a>
-        </div>
-        <!-- Navbar -->
-        <nav class="navbar">
-            <div class="sub-navbar">
-                <a class="sub-nav-item location">LOCATIONS <i class="fas fa-map-marker-alt"></i></a>
-                <button class="sub-nav-item hamburger"><i class="fas fa-bars"></i></button>
-                <ul class="sub-nav-list">
-                    <li class="nav-item search"><i class="fas fa-search"></i></li>
-                    <li class="nav-item cart"><button><i class="fas fa-shopping-cart"></i></button></li>
-                    <li class="nav-item user"><a href="account.html"><i class="fa fa-user"></i></a></li>
-                </ul>
-            </div>
-            <hr color="#ccc">
-            <ul class="sub-navbar menu">
-                <li class="nav-item"><a href="products.html">CAKE</a></li>
-                <li class="nav-item"><a href="products.html">BAKERY</a></li>
-                <li class="nav-item"><a href="products.html">BEVERAGE</a></li>
-                <li class="nav-item"><a href="products.html">HOLYDAY</a></li>
-                <li class="nav-item"><a href="products.html">CUSTOM</a></li>
-            </ul>
-        </nav>
-    </header>
 	<main>
 		<section class="login">
-			<div class="login-item">
+            <img src="assets/img/wave1.png" class="wave">
+            <div class="signup">
+                <h2>Шинээр бүртгүүлэх</h2>
+                <a href="signup.html"><input type="submit" class="btn1" value="бүртгүүлэх" ></a>
+            </div>
+            <div class="login-item"> 
 				<div class="login-item-img">
-                <img class="login-img" src="assets/svg/loginpic.svg" alt="section-img"><br>
-                <a href="signup.html" class="account">Don't have an account???</a> 
-
+                    <img class="login-img" src="assets/svg/loginpic.svg" alt="section-img"><br>
 				</div>
-				<div class="login-box">
-					<h1 class="title">Log In</h1>
-    				<form>
-            			<i class="fas fa-user-alt"></i><input type="text" name="" placeholder="Email" style="margin-top: 40px"> <br>
-    					<i class="fas fa-lock"></i><input type="text" name=""  placeholder="Password"><br>
-
-            			<a href="#" class="pass" >Forgot password???</a> <br>
-            			<input type="submit" name="submit" value="Log In" ><br>
-                        <h5>Or Log In with</h5>
-                        <a href="http://www.facebook.com"><i class="fa fa-facebook"></i></a>
-                        <a href="http://www.twitter.com"><i class="fa fa-twitter"></i></a>
-                        <a href="http://www.instagram.com"><i class="fa fa-instagram"></i></a>
-            		</form>
+				<div class="login-container">
+    				<form action="login.html">
+                        <img class="profile" src="assets/img/cupcake.png">
+                        <h2 class="title">Нэвтрэх</h2>
+                        <div class="input-div one focus">
+            			     <i class="fas fa-user"></i>
+                            <div>
+                                <h5>Нэвтрэх нэр эсвэл Имэйл</h5>
+                                <input class="input" type="text">
+                            </div>
+                        </div>
+                        <div class="input-div two focus">
+                            <i class="fas fa-lock"></i>
+                            <div>
+                                <h5>Нууц үг</h5>
+                                <input class= "input" type="Password" name="">
+                            </div>
+                        </div>
+                        <a href="" class="pass">Нууц үгээ мартсан уу?</a>
+            			<input type="submit" class="btn" value="Нэвтрэх" >
+                        <div class="platforms">
+                            <h5>Эсвэл сошиал хаягаараа нэвтрэх</h5>
+                            <ul>
+                                <li><a href="http://www.facebook.com"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="http://www.twitter.com"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="http://www.instagram.com"><i class="fa fa-instagram"></i></a></li>
+                            </ul>
+                        </div>
+                    </form>
             	</div>
             </div>
 		</section>
 	</main>
-<!-- Footer -->
-    <footer>
+<footer>
         <!-- Main Footer -->
         <div class="main-footer-container">
             <ul class="footer-items-container">
-                <h1 class="item-title">ABOUT US</h1>
-                <li class="item"><a href="about.html">Introduction</a></li>
-                <li class="item"><a href="about.html">Goal</a></li>
-                <li class="item"><a href="about.html">Timeline</a></li>
-                <li class="item"><a href="about.html">Achievements</a></li>
+                <h1 class="item-title">БИДНИЙ ТУХАЙ</h1>
+                <li class="item"><a href="about.html">Танилцуулга</a></li>
+                <li class="item"><a href="about.html">Зорилго үнэт зүйлс</a></li>
+                <li class="item"><a href="about.html">Он цагийн хэлхээс</a></li>
+                <li class="item"><a href="about.html">Бидний амжилтууд</a></li>
             </ul>
             <ul class="footer-items-container">
-                <h1 class="item-title">PRODUCTS</h1>
-                <li class="item"><a href="products.html">Cake</a></li>
-                <li class="item"><a href="products.html">Bakery</a></li>
-                <li class="item"><a href="products.html">Beverage</a></li>
-                <li class="item"><a href="products.html">Holiday</a></li>
+                <h1 class="item-title">БҮТЭЭГДЭХҮҮН ҮЙЛЧИЛГЭЭ</h1>
+                <li class="item"><a href="products.html">Бялуун бүтээгдэхүүн</a></li>
+                <li class="item"><a href="products.html">Бэйкери бүтээгдэхүүн</a></li>
+                <li class="item"><a href="products.html">Ундааны төрөл</a></li>
+                <li class="item"><a href="products.html">Баярын бүтээгдэхүүн</a></li>
             </ul>
             <ul class="footer-items-container">
-                <h1 class="item-title">ONLINE</h1>
-                <li class="item"><a href="about.html">Delivery Area</a></li>
-                <li class="item"><a href="about.html">Term and Condition</a></li>
-                <li class="item"><a href="about.html">Security</a></li>
-                <li class="item"><a href="about.html">How to Order</a></li>
+                <h1 class="item-title">ОНЛАЙН ЗАХИАЛГА</h1>
+                <li class="item"><a href="about.html">Хүргэлтийн бүс</a></li>
+                <li class="item"><a href="about.html">Үйлчилгээний төрөл</a></li>
+                <li class="item"><a href="about.html">Нууцлал</a></li>
+                <li class="item"><a href="about.html">Хэрхэн захиалах вэ?</a></li>
             </ul>
             <ul class="footer-items-container">
-                <h1 class="item-title">ACCOUNT</h1>
-                <li class="item"><a href="login.html">Login</a></li>
-                <li class="item"><a href="signup.html">Register</a></li>
+                <h1 class="item-title">МИНИЙ БҮРТГЭЛ</h1>
+                <li class="item"><a href="login.html">Нэвтрэх</a></li>
+                <li class="item"><a href="signup.html">Бүртгүүлэх</a></li>
             </ul>
             <ul class="footer-items-container">
-                <h1 class="item-title">CONTACT</h1>
-                <li class="item"><a href="about.html">Contact Us</a></li>
-                <li class="item"><a href="about.html">Feedback</a></li>
-                <li class="item"><a href="about.html">Phone: 70045556</a></li>
-                <li class="item"><a href="about.html">Email: order@jurur.mn</a></li>
+                <h1 class="item-title">ХОЛБОО БАРИХ</h1>
+                <li class="item"><a href="about.html">Холбоо барих</a></li>
+                <li class="item"><a href="about.html">Санал хүсэлт</a></li>
+                <li class="item"><a href="about.html">Утас: 70045556</a></li>
+                <li class="item"><a href="about.html">Имэйл: order@jurur.mn</a></li>
             </ul>
         </div>
         <!-- Social Links -->
