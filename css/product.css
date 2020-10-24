@@ -10,105 +10,262 @@
     --main-font: 'Raleway', sans-serif;
     --footer-bg-color: #f2f2f2;
     --other-font:'Montserrat', sans-serif;
-    --bold-montserrat: 'Montserrat', sans-serif;
     --price-color:#73B1BC;
 }
 
 /* ----------------------------------------------------------- */
-
-
-header, main {                  /*yoronhii*/
-	margin-left: 10%;
-	margin-right: 10%;
-	font-family: var(--other-font);
-	color: var(--main-font-color);
-
+img {
+  width: 50%;
+  height: auto;
 }
-.nav-menu{                      /*home/ products  heseg*/
-    font-size: 16px;
-}
-.nav-menu a{                    /*home / prod hesgiin link*/
-    text-decoration: none;
+main{
+    font-family: var(--other-font);
     color: var(--main-font-color);
-
+    margin-left: 10%;
+    margin-right: 10%;
 }
-section .product-info{  
-overflow: auto;                
-
+header{
+    background-color: var(--price-color);
 }
-main img{
-    float: left;
+.navig-menu a{
+    color: var(--main-font-color);
+    text-decoration: none;
+}
+.main-prod{
+    display: flex;
+    margin-top: 5vh;
+}
+.product-info{
+    margin-left: 5vh;
 }
 .product-title{
-    font-size: 36px; 
-    font-weight: 700;
-
-    
+    font-size: 36px;
+    font-weight: bold;
 }
-.price{
-    color:var(--price-color);
+#price{
+    color: var(--sub-font-color);
     font-size: 28px;
-     margin-top: -1%;
-
+    margin-top: 2rem;
 }
-.product-info p{
-    white-space: pre-line;
-    font-weight: 500;
+#text1{
     font-size: 18px;
-    margin-top: -1%;
+    margin-top: 2rem;
 }
-.product-info h3{
-    font-weight: 500;
+#ingredient{
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 1rem;
+
+}
+#text2{
+    margin-top: 1rem;
     font-size: 18px;
-    white-space: pre-line;
+    font-weight: normal;
 }
-.ingredient{
-    font-size: 24px !important;
-    font-weight: 700 !important;
-    padding-bottom: 2%;
+.prod-buttons{
+    margin-top: 3rem;
+    display: flex;
 }
-
-.size h5{
-    clear: left;
-
-    float: left;
-    padding-right: 30px;
+.size{  
     font-size: 25px;
+    text-transform: uppercase;
+}
+.amount{
+    font-size: 25px;
+    text-transform: uppercase;
+    margin-left: 10rem;
+}
+
+
+.lil-buttons button{
+padding-left: 20px;
+padding-right: 20px;
+padding-top: 5px;
+padding-bottom: 5px;
+margin-left: -8px;
+border-style: solid;
+background-color: white;
+border-color: var(--sub-font-color);
+font-family: var(--other-font) ;
+color: var(--main-font-color);
+font-size: 18px;
+border-width: 2px;
+}
+.lil-buttons{
+    margin-top: 1rem;
+    margin-left: 0.5rem;
+}
+#button1{
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+#button3{
+    background-color: var(--price-color);
+    color: white;
+}
+
+#button4{
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+.amount form{
+    position: relative;
+    right: 1vh;
+}
+.amount input::-webkit-outer-spin-button,.amount input::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+    margin: 0;
+}
+.amount input{
+    width: 20vh;
+    height: 3.72vh;
+    border-style: solid;
+    border-right: none;
+    border-color: var(--price-color);
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    position: relative;
+    bottom: 0.1vh;
+
+}
+#button5{    
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    border-right: none;
+    background-color: var(--price-color);
+    color: white;
+}
+ 
+#button6{
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+} 
+.add{
+    background-color: var(--main-bg-color);
+    color: white;
     margin-top: 1vh;
-    font-weight: 400;
-}
-.size button{
-        overflow: auto;
-        margin-top: 1.3vh;
-        margin-right: -0.5%;
-        border-radius: 2px;
-        padding-left: 15px;
-        padding-right: 15px;
-        padding-top: 4px;
-        padding-bottom: 4px;
-        background-color: white;
-        border-color: var(--price-color);
-        border-width: 0.1px;
-        box-shadow: 0px 0px;
-
+    border-style: none;
+    width: 300px;
+    height: 60px;
+    margin-top: 5vh;
+    font-weight: bold;
+    font-size: 20px;
 }
 
-#amount h5{
- float: left;
- margin-left: 40%;
- margin-top: -1%;
- padding-right: 30px;
-font-size: 25px;
-font-weight: 400;
+.bottom-main{
+    display: flex;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+    margin-left: 15vh;
 }
 
-#amount form{
-    overflow: auto;
+.delivery{
+    background-color: var(--price-color);
+    width: 431px;
+    height: 200px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 30px;
+}
+.delivery p{
+    padding-top: 20px;
+    white-space: pre-line; 
+    font-size: 25px;
+}
+.delivery h2{
+    font-size: 30px;
+}
+.delivery p,h2{
+    color: white;
+}
+.aside{
+    display: flex;
+    margin-left: 24vh;
+}
 
-    
+.aside h2{
+    color: var(--main-font-color);
+}
+
+.aside1 ul{
+    margin-top: 2vh;
+}
+.aside1 li{
+    margin-bottom: 1vh;
+}
+.aside2{
+    white-space: pre-line;
+    margin-left: 4vh;
+    margin-top: -2vh;
 }
 
 
+
+
+/* Footer */
+footer {
+    width: 100%;
+    border-top: 0.5px solid #ccc;
+    background: var(--footer-bg-color);
+    padding: 2.5rem 0 0.5rem 0;
+    text-decoration: none;
+}
+footer a{
+    text-decoration: none;
+    color: black;
+}
+footer h1{
+    color: var(--main-bg-color);
+}
+
+footer .main-footer-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    width: 80%;
+    margin: auto;
+    grid-gap: 1rem;
+    margin-bottom: var(--section-margin);
+}
+
+.main-footer-container .footer-items-container {
+    list-style: none;
+}
+
+.footer-items-container .item-title {
+    font-size: 24px;
+}
+
+.footer-items-container .item {
+    font-size: 1rem;
+    margin: 1rem 0;
+}
+
+footer .social-links {
+    text-align: center;
+    margin-bottom: var(--section-margin);
+}
+
+footer .social-links a {
+    font-size: 2rem;
+    margin: 1rem;
+}
+
+footer .copy-msg {
+    font-size: 0.875rem;
+    text-align: center;
+}
+
+@media(max-width: 768px) {
+    footer .main-footer-container { grid-template-columns: repeat(2, 1fr); }
+    .footer-items-container .item-title { font-size: 18px; }
+    .footer-items-container .item { font-size: 14px; }
+}
+
+@media(max-width: 600px) {
+    footer .main-footer-container { grid-template-columns: repeat(2, 1fr); }
+    .footer-items-container .item-title { font-size: 18px; }
+    .footer-items-container .item { font-size: 14px; }
+}
 
 
 

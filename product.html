@@ -10,94 +10,110 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="language" content="English">
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="./css/product.css">
+    <link rel="stylesheet" href="./css/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Strawberry Cake | Jur Ur</title>
-    <link rel="stylesheet" href="product.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Raleway&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/60fa06b939.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <!-- Header -->
-    <header>
-        <!-- Logo -->
- 
+    <header class="trans">
         <!-- Navbar -->
-        <nav class="header">
- 
-            <div class="upper header">
-                <img class="logo" src="logo.svg" alt="logo">
-                <h5 class="location">Locations<i class="fas fa-map-marker-alt"></i></h5>
-                <ul class="top-icons">
-                    <li>Search</li>
-                    <li><button>Cart</button></li>
-                    <li><a href="account.html">User</a></li>
-                </ul>
-            </div>
-            <ul class="bottom header">
-                <li><a href="products.html">CAKE</a></li>
-                <li><a href="products.html">BAKERY</a></li>
-                <li><a href="products.html">BEVERAGE</a></li>
-                <li><a href="products.html">HOLYDAY</a></li>
-                <li><a href="products.html">CUSTOM</a></li>
+        <nav class="navbar menu">
+            <!-- <hr color="#ccc"> -->
+            <ul class="main-navbar">
+                <li class="nav-item close"><button><i class="fas fa-times"></i></button></li>
+                <li class="nav-item"><a href="products.html">CAKE</a></li>
+                <li class="nav-item"><a href="products.html">BAKERY</a></li>
+                <li class="nav-item"><a href="products.html">BEVERAGE</a></li>
+                <li class="nav-item"><a href="products.html">HOLIDAY</a></li>
+                <li class="nav-item"><a href="products.html">CUSTOM</a></li>
+            </ul>
+            <button class="nav-item hamburger"><i class="fas fa-bars"></i></button>
+        </nav>
+        <!-- Logo -->
+        <div class="logo-container">
+            <svg id="Component_6_1" data-name="Component 6 – 1" xmlns="http://www.w3.org/2000/svg" width="171" height="78" viewBox="0 0 171 78">
+                <text class="blue" id="JUR_UR" data-name="JUR UR" transform="translate(0 45)" fill="#fff" font-size="48" font-family="Raleway" font-weight="800"><tspan x="0" y="0">JUR UR</tspan></text>
+                <text class="black" id="BAKERY" transform="translate(68 72)" fill="#fff" font-size="24" font-family="Montserrat-Regular, Montserrat"><tspan x="0" y="0">BAKERY</tspan></text>
+                <text class="black" id="SINCE_1987" data-name="SINCE 1987" transform="translate(12 62)" fill="#fff" font-size="10" font-family="Montserrat-Regular, Montserrat"><tspan x="0" y="0">SINCE 1987</tspan></text>
+            </svg>              
+        </div>
+        <nav class="navbar">
+            <ul class="sub-navbar">
+                <li class="nav-item locations"><a href="branch.html">LOCATIONS</a></li>
+                <li class="nav-item search"><i class="fas fa-search"></i></li>
+                <li class="nav-item user"><a href="account.html"><i class="fas fa-user-circle"></i></a></li>
+                <li class="nav-item cart"><button><i class="fas fa-box"></i></button></li>
             </ul>
         </nav>
     </header>
 
+
     <!-- Main -->
     <!-- Products Information -->
     <main>
-        <div class="nav-menu">
+        <div class="navig-menu">
             <a class="nav-link1" href="index.html">Home<a/> / <a class="nav-link2" href="products.html">Products</a> / <a class="nav-link3" href="product.html">Cake</a>
         </div>
         <section>
             <!-- Image -->
-            <img class="product-img" src="straw.jpg" alt="product-img">
+        <div class="main-prod">
+            <img class="product-img"  src="./assets/img/straw.jpg" alt="product-img">
             <div class="product-info">
                 <!-- Title -->
                 <h1 class="product-title">STRAWBERRY CAKE</h1>
-                <h5 class="price">&#36; 6.99</h5>
+                <h5 id="price">&#36; 6.99</h5>
                 <!-- Description -->
-                <p class="text1">Strawberry cake is a cake that uses strawberry as a primary ingredient. Strawberries may be used in
+                <p id="text1">Strawberry cake is a cake that uses strawberry as a primary ingredient. Strawberries may be used in
                  the cake batter, atop cakes and in a strawberry cake's frosting. Some are served chilled or partially
                  frozen, and they are sometimes served as a Valentine's Day dish.</p>
-                <h3 class="ingredient">INGREDIENTS</h3>
+                <h3 id="ingredient">INGREDIENTS</h3>
                 <!-- Ingredients -->
-                <h3 class="text2">milk chocolate (sugar, cocoa butter, chocolate, skim milk, lactose, milkfat, soy lecithin, artificial flavor),
+                <h3 id="text2">milk chocolate (sugar, cocoa butter, chocolate, skim milk, lactose, milkfat, soy lecithin, artificial flavor),
                  peanuts, corn syrup, sugar, palm oil, skim milk, lactose, salt, egg whites, talia, artificial flavor.</h3>
                 <!-- Customization -->
-                <div class="size">
-                    <h5>SIZE</h5>
-                    <div id="lil-buttons">
-                        <button type="button">7</button>
-                        <button type="button">8</button>
-                        <button type="button">9</button>
-                        <button type="button">10</button>
+                <div class="prod-buttons">
+                    <div class="size">
+                        <h5>SIZE</h5>
+                        <div class="lil-buttons">
+                            <button class="butons" id="button1" type="button">7</button>
+                            <button class="butons" id="button2" type="button">8</button>
+                            <button class="butons" id="button3" type="button">9</button>
+                            <button class="butons" id="button4" type="button">10</button>
+                        </div>
+                    </div>
+                    <div class="amount">
+                        <h5>AMOUNTS</h5>
+                        <form class="lil-buttons">
+                            <input id="input" type="number" type="input" max="10" min="1">
+                            <button id="button5" type="button">+</button>
+                            <button id="button6" type="button">-</button>
+                        </form>
                     </div>
                 </div>
-                <div id="amount">
-                    <h5>AMOUNTS</h5>
-                    <form>
-                        <input type="number" max="10" min="1">
-                        <button type="button">+</button>
-                        <button type="button">-</button>
-                    </form>
-                </div>
+                 <button class="add" type="button">ADD TO CART</button>
             </div>
+        
             <!-- Add to cart button -->
-            <button class="add" type="button">ADD TO CART</button>
+             
+        </div>
+
         </section>
         <section class="bottom-main">
             <!-- Delivery -->
-            <div>
+            <div class="delivery">
                 <h2>Delivery Notice</h2>
                 <p>Delivery hours are 9AM to 6PM
                     and the delivery is free if your
                     order is higher than 10$.</p>
             </div>
             <!-- Sub Information -->
-            <div>
-                <div>
+            <div class="aside">
+                <div class="aside1">
                     <h2>NUTRITIONAL FACTS</h2>
                     <ul>
                         <li>Calories: <span>214kcal</span></li>
@@ -107,61 +123,63 @@
                         <li>Potassium: <span>302mg</span></li>
                     </ul>
                 </div>
-                <div>
+
+                <div class="aside2">
                     <h2>STORING INFORMATION</h2>
-                    <p>Keep it at room temperature for a day or two, then wrap it up and freeze it for
-                        longer-term storage.</p>
+                    <p>Keep it at room temperature for a day or two,
+                    then wrap it up and freeze it for longer-term storage.</p>
                 </div>
             </div>
         </section>
     </main>
 
     <!-- Footer -->
-    <footer>
+     <footer>
         <!-- Main Footer -->
-        <div>
-            <div>
-                <h1>ABOUT US</h1>
-                <a href="about.html">Introduction</a>
-                <a href="about.html">Goal</a>
-                <a href="about.html">Timeline</a>
-                <a href="about.html">Achievements</a>
-            </div>
-            <div>
-                <h1>PRODUCTS</h1>
-                <a href="products.html">Cake</a>
-                <a href="products.html">Bakery</a>
-                <a href="products.html">Beverage</a>
-                <a href="products.html">Holiday</a>
-            </div>
-            <div>
-                <h1>ONLINE</h1>
-                <a href="about.html">Delivery Area</a>
-                <a href="about.html">Term and Condition</a>
-                <a href="about.html">Security</a>
-                <a href="about.html">How to Order</a>
-            </div>
-            <div>
-                <h1>ACCOUNT</h1>
-                <a href="login.html">Login</a>
-                <a href="signup.html">Register</a>
-            </div>
-            <div>
-                <h1>CONTACT</h1>
-                <a href="about.html">Contact Us</a>
-                <a href="about.html">Feedback</a>
-                <a href="about.html">Phone: 70045556</a>
-                <a href="about.html">Email: order@jurur.mn</a>
-            </div>
+        <div class="main-footer-container">
+            <ul class="footer-items-container">
+                <h1 class="item-title">ABOUT US</h1>
+                <li class="item"><a href="about.html">Introduction</a></li>
+                <li class="item"><a href="about.html">Goal</a></li>
+                <li class="item"><a href="about.html">Timeline</a></li>
+                <li class="item"><a href="about.html">Achievements</a></li>
+            </ul>
+            <ul class="footer-items-container">
+                <h1 class="item-title">PRODUCTS</h1>
+                <li class="item"><a href="products.html">Cake</a></li>
+                <li class="item"><a href="products.html">Bakery</a></li>
+                <li class="item"><a href="products.html">Beverage</a></li>
+                <li class="item"><a href="products.html">Holiday</a></li>
+            </ul>
+            <ul class="footer-items-container">
+                <h1 class="item-title">ONLINE</h1>
+                <li class="item"><a href="about.html">Delivery Area</a></li>
+                <li class="item"><a href="about.html">Term and Condition</a></li>
+                <li class="item"><a href="about.html">Security</a></li>
+                <li class="item"><a href="about.html">How to Order</a></li>
+            </ul>
+            <ul class="footer-items-container">
+                <h1 class="item-title">ACCOUNT</h1>
+                <li class="item"><a href="login.html">Login</a></li>
+                <li class="item"><a href="signup.html">Register</a></li>
+            </ul>
+            <ul class="footer-items-container">
+                <h1 class="item-title">CONTACT</h1>
+                <li class="item"><a href="about.html">Contact Us</a></li>
+                <li class="item"><a href="about.html">Feedback</a></li>
+                <li class="item"><a href="about.html">Phone: 70045556</a></li>
+                <li class="item"><a href="about.html">Email: order@jurur.mn</a></li>
+            </ul>
         </div>
         <!-- Social Links -->
-        <div>
-            <a href="http://www.facebook.com">Facebook</a>
-            <a href="http://www.twitter.com">Twitter</a>
-            <a href="http://www.instagram.com">Instagram</a>
+        <div class="social-links">
+            <a href="http://www.facebook.com"><i class="fab fa-facebook-square"></i></a>
+            <a href="http://www.twitter.com"><i class="fab fa-twitter-square"></i></a>
+            <a href="http://www.instagram.com"><i class="fab fa-instagram-square"></i></a>
         </div>
         <!-- Copyright Notice -->
-        <h6>Copyright &copy; www.jurur.mn. All right reserved.</h6>
+        <h6 class="copy-msg">Copyright &copy; www.jurur.mn. All right reserved.</h6>
     </footer>
+        <script src="main.js"></script>
 </body>
 </html>
