@@ -48,54 +48,96 @@
         </nav>
     </header>
     <main>
-    	<section>
-    		<div>
-    			Home > Products > Account Setting
-     		</div>
-     		<div>
-     			<h3>MY ACCOUNT</h3>
-     			<ul>
-     				<li><a href="account.html">ACCOUNT SETTINGS<a/></li>
-     				<li><a href="account.html">MY PROFILE<a/></li>
-     				<li><a href="account.html">ORDER HISTORY<a/></li>
-     				<li><a href="account.html">ADDRESS BOOK<a/></li>
+
+    	<section class="aside">
+      <div class="navig">
+          Home > Products > Account Setting
+      </div>
+
+     		<div class="aside-content">
+     			<h3 class="aside-title">MY ACCOUNT</h3>
+     			<ul class="aside-menu">
+     				<li class="aside-links"><a href="account.html">ACCOUNT SETTINGS<a/></li>
+     				<li class="aside-links"><a href="account.html">MY PROFILE<a/></li>
+     				<li class="aside-links"><a href="account.html">ORDER HISTORY<a/></li>
+     				<li class="aside-links"><a href="account.html">ADDRESS BOOK<a/></li>
      			</ul>
-     			<a href="index.html">SIGN OUT</a>
+     			<a id="aside-signout" href="index.html">SIGN OUT</a>
      		</div>
     	</section>
-    	<section>
-    		<div>
-    			<h2>ACCOUNT SETTINGS</h2>
-    			<div>
-    				<h4>Personal Information</h4>
-    				<form action="#">
-  						<label for="fname">First name:</label><br>
-  						<input type="text" id="fname" name="fname" placeholder="Enter..."><br>
-  						<label for="lname">Last name:</label><br>
-  						<input type="text" id="lname" name="lname" placeholder="Enter..."><br>
-  						<label for="email">Email:</label><br>
-  						<input type="text" id="email" name="email" placeholder="test@gmail.com"><br>
-  						<label for="birthday">Birthday:</label><br>
-  						<input type="date" id="birthday" name="birthday"><br>
-  						<label for="pwd">New Password:</label><br>
-  						<input type="password" id="pwd" name="new password" minlength="8" placeholder="Enter..."><br>
-  						<label for="pwd"> Retype New Password:</label><br>
-  						<input type="password" id="pwd2" name="retype password" minlength="8" placeholder="Enter..."><br>
-  						<p>GENDER:</p>
-  						<input type="radio" id="male" name="gender" value="male">
-  						<label for="male">Male</label><br>
-  						<input type="radio" id="female" name="gender" value="female">
-  						<label for="female">Female</label><br>
-  						<input type="radio" id="other" name="gender" value="other">
-  						<label for="other">Other</label><br><br>
-						<input type="submit" value="SAVE">
+    	<section class="main">
+    		<div class="main-content">
+    			<h2 id="big-title">ACCOUNT SETTINGS</h2>
+    			<div class="top-content">
+    				<h4 class="sub-title">- Personal Information</h4>
+    				<form class="form-acc" action="#">
+              <div class="label">
+                <div class="forms">
+  						    <label for="fname">First name:</label><br>
+  						    <input class="input" type="text" id="fname" name="fname" placeholder="Enter..."><br>
+                </div>
+                <div class="last">
+  						    <label for="lname">Last name:</label><br>
+  						    <input class="input" type="text" id="lname" name="lname" placeholder="Enter..."><br>
+                </div>
+              </div>
+              <div class="label">
+                <div>
+  						    <label for="email">Email:</label><br>
+  						    <input class="input" type="text" id="email" name="email" placeholder="test@gmail.com"><br>
+                </div>
+                <div class="last">
+  						    <label for="birthday">Birthday:</label><br>
+  						    <input class="input" type="date" id="birthday" name="birthday"><br>
+                </div>
+              </div>
+              <div class="label">
+                <div>
+  						    <label for="pwd">New Password:</label><br>
+  						    <input class="input" type="password" id="pwd" name="new password" minlength="8" placeholder="Enter..."><br>
+                </div>
+                <div class="last">
+  						    <label for="pwd"> Retype New Password:</label><br>
+  						    <input class="input" type="password" id="pwd2" name="retype password" minlength="8" placeholder="Enter..."><br>
+                </div>              
+              </div>
+              <div class="gender">
+  						  <p>GENDER:</p>
+                <div class="male">
+  						    <input class="input" type="radio" id="male" name="gender" value="male">
+  						    <label for="male">Male</label><br>
+                  <span class="checkmark"></span>
+                </div>
+                <div class="female">
+  						    <input class="input" type="radio" id="female" name="gender" value="female">
+  						    <label for="female">Female</label><br>
+                  <span class="checkmark"></span>
+                </div>
+                <div class="other">
+  						    <input class="input" type="radio" id="other" name="gender" value="other">
+  						    <label for="other">Other</label><br><br>
+                  <span class="checkmark"></span>
+                </div>
+                <div>
+                  <input class="save" type="submit" value="SAVE">
+                </div>
+              </div>
   					</form> 
     			</div>
-    			<div>
-    				<h4>SOCIAL MEDIA</h4>
-    				<a href="#">Connect with FACEBOOK</a>
-    				<a href="#">Connect with TWITTER</a>
-    				<a href="#">Connect with GOOGLE</a>
+    			<div class="bottom-content">
+    				<h4 class="sub-title">SOCIAL MEDIA</h4>
+            <div class="col">
+              <a href="#" class="fb btn" >
+                <i class="fa fa-facebook fa-fw" style="color: white"></i> Login with Facebook
+              </a>
+              <a href="#" class="twitter btn" style="color: white">
+                <i class="fa fa-twitter fa-fw" style="color: white"></i> Login with Twitter
+              </a>
+              <a href="#" class="google btn">
+                <i class="fa fa-google fa-fw" style="color: white">
+                </i> Login with Google+
+              </a>
+            </div>
     			</div>
     		</div>
     	</section>
