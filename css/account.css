@@ -54,8 +54,6 @@ main{
     padding-bottom: 10px;
     border-radius: 20px;
 }
-.main{
-}
 #big-title{
     background-color: var(--main-bg-color);
     padding-top: 2vh;

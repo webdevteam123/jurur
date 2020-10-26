@@ -1,0 +1,72 @@
+:root {
+    --main-bg-color: #507DBC;
+    --main-font-color: #3d3f56;
+    --sub-bg-color: #A3CEF1;
+    --sub-font-color: #73B1BC;
+    --section-margin: 2rem;
+    --main-font: 'Raleway', sans-serif;
+    --footer-bg-color: #f2f2f2;
+    --other-font:'Montserrat', sans-serif;
+    --price-color:#73B1BC;
+}
+@media(min-width: 992px) { :root { --main-width: 968px; --banner-height: 30rem} }
+
+@media(min-width: 1600px) { :root { --main-width: 1280px; --banner-height: 40rem } }
+
+@media(min-width: 1920px) { :root { --main-width: 1568px; --img-size: 20rem; --banner-height: 50rem } }
+
+@media(max-width: 768px) { :root { --section-margin: 1rem; } }
+
+/* ----------------------------------------------------------- */
+#img-1{
+	width: 100%;
+}
+#img-2{
+    width:50%;
+}
+main{
+    display: flex;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.aside-content{
+    margin-top: 5vh;
+}
+.content{
+    margin-top: 9vh;
+    margin-left: 5vh; 
+}
+.aside-content h3{
+    margin-bottom: 2vh;
+}
+.aside-menu li{
+    margin-left: 1vh;
+    margin-bottom: 1.5vh;
+}
+#title{
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    font-size: 36px;
+    color: var(--main-bg-color);  
+}
+#title ~ p{
+    font-size: 24px;
+    margin-bottom: 5vh;
+}
+.bottom-content{
+    display: flex;
+    font-size: 24px;
+    text-align: center;
+    background-color: var(--main-bg-color);
+    margin-bottom: 15vh;
+}
+.bottom-content p{
+    color: white;
+    margin-top: 5vh;
+    margin-left: 5vh;
+    margin-right: 5vh;
+}
+.bottom-content svg{
+    margin-top: 5vh;
+
+}
