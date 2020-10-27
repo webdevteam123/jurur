@@ -23,7 +23,7 @@
 /* ----------------------------------------------------------- */
 img {
   width: 50%;
-  height: auto;
+  height: 50%;
 }
 main{
     font-family: var(--other-font);
@@ -164,19 +164,21 @@ border-width: 2px;
     margin-top: 3vh;
     margin-bottom: 3vh;
     margin-left: 15vh;
+    margin-right: -35vh;
 }
 
 .delivery{
     background-color: var(--price-color);
     width: 431px;
     height: 200px;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 30px;
+    padding-right: 10px;
     padding-top: 30px;
+    padding-bottom: 30px;
 }
 .delivery p{
     padding-top: 20px;
-    white-space: pre-line; 
+    white-space: pre-line;
     font-size: 25px;
 }
 .delivery h2{
@@ -204,6 +206,11 @@ border-width: 2px;
     white-space: pre-line;
     margin-left: 4vh;
     margin-top: -2vh;
+}
+@media only screen and (max-width: 1800px) {
+  .delivery {
+    margin-right: 20vh;
+  }
 }
 
 
