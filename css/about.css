@@ -8,6 +8,7 @@
     --footer-bg-color: #f2f2f2;
     --other-font:'Montserrat', sans-serif;
     --price-color:#73B1BC;
+    --main-width: 1536px;
 }
 @media(min-width: 992px) { :root { --main-width: 968px; --banner-height: 30rem} }
 
@@ -17,23 +18,52 @@
 
 @media(max-width: 768px) { :root { --section-margin: 1rem; } }
 
+
 /* ----------------------------------------------------------- */
+
+
+.history {
+    display: flex;
+    margin: auto;
+    height: 3rem;
+    width: var(--main-width);
+    list-style-type: none;
+}
+
+.history .history-item {
+    font-size: 14px;
+    
+}
+
+.history .with-slash::before {
+    content: "/";
+    margin: 0 0.5rem;
+}
+
+@media(max-width: 768px) {
+    .history { width: 95%; }
+}
+
+
+/* ----------------------------------------------------------- */
+
+
 #img-1{
 	width: 100%;
 }
 #img-2{
     width:50%;
+    object-fit: cover;
 }
 main{
     display: flex;
-    margin-left: 10%;
-    margin-right: 10%;
+    width: var(--main-width);
+    margin: auto;
 }
 .aside-content{
-    margin-top: 5vh;
+    
 }
 .content{
-    margin-top: 9vh;
     margin-left: 5vh; 
 }
 .aside-content h3{
@@ -44,27 +74,34 @@ main{
     margin-bottom: 1.5vh;
 }
 #title{
-    margin-top: 5vh;
-    margin-bottom: 5vh;
-    font-size: 36px;
+    margin: 5vh 0;
+    font-size: 48px;
     color: var(--main-bg-color);  
+    font-family: var(--main-font);
 }
-#title ~ p{
-    font-size: 24px;
-    margin-bottom: 5vh;
+.top-content p{
+    font-size: 18px;
+    margin: 5vh 0;
 }
 .bottom-content{
     display: flex;
     font-size: 24px;
     text-align: center;
     background-color: var(--main-bg-color);
-    margin-bottom: 15vh;
+    margin-bottom: 5rem;
+    height: 40rem;
 }
+.bottom-content .side-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
 .bottom-content p{
     color: white;
-    margin-top: 5vh;
-    margin-left: 5vh;
-    margin-right: 5vh;
+    width: 80%; 
+
 }
 .bottom-content svg{
     margin-top: 5vh;
