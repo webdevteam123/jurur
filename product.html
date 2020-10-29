@@ -11,8 +11,8 @@
     <meta name="language" content="English">
     <meta charset="UTF-8">
     <link rel="icon" type="image/png" href="assets/favicon.png"/>
-    <link rel="stylesheet" href="./css/product.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/product.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Strawberry Cake | Jur Ur</title>
 
@@ -21,7 +21,7 @@
 </head>
 <body>
     <!-- Header -->
-    <header class="white">
+    <header class="trans">
         <!-- Navbar -->
         <nav class="navbar menu">
             <!-- <hr color="#ccc"> -->
@@ -53,88 +53,108 @@
         </nav>
     </header>
 
+    <!-- Ads Banner -->
+	<div class="ads-banner">
+		<!-- <h1 class="ads-banner-desc">ГҮЗЭЭЛЗГЭНТЭЙ БЯЛУУ</h1> -->
+        <div class="banner-bottom-edge"></div>
+    </div>
+    
+    <!-- History -->
+	<ul class="history">
+		<li class="history-item"><a href="index.html">Нүүр</a></li>
+		<li class="history-item with-slash"><a href="products.html">Бялуу</a></li>
+	</ul>
 
     <!-- Main -->
-    <!-- Products Information -->
     <main>
-        <div class="navig-menu">
-            <a class="nav-link1" href="index.html">Home<a/> / <a class="nav-link2" href="products.html">Products</a> / <a class="nav-link3" href="product.html">Cake</a>
-        </div>
-        <section>
-            <!-- Image -->
-        <div class="main-prod">
-            <img class="product-img"  src="./assets/img/straw.jpg" alt="product-img">
-            <div class="product-info">
-                <!-- Title -->
-                <h1 class="product-title">STRAWBERRY CAKE</h1>
-                <h5 id="price">&#36; 6.99</h5>
-                <!-- Description -->
-                <p id="text1">Strawberry cake is a cake that uses strawberry as a primary ingredient. Strawberries may be used in
-                 the cake batter, atop cakes and in a strawberry cake's frosting. Some are served chilled or partially
-                 frozen, and they are sometimes served as a Valentine's Day dish.</p>
-                <h3 id="ingredient">INGREDIENTS</h3>
-                <!-- Ingredients -->
-                <h3 id="text2">milk chocolate (sugar, cocoa butter, chocolate, skim milk, lactose, milkfat, soy lecithin, artificial flavor),
-                 peanuts, corn syrup, sugar, palm oil, skim milk, lactose, salt, egg whites, talia, artificial flavor.</h3>
-                <!-- Customization -->
-                <div class="prod-buttons">
-                    <div class="size">
-                        <h5>SIZE</h5>
-                        <div class="lil-buttons">
-                            <button class="butons" id="button1" type="button">7</button>
-                            <button class="butons" id="button2" type="button">8</button>
-                            <button class="butons" id="button3" type="button">9</button>
-                            <button class="butons" id="button4" type="button">10</button>
-                        </div>
-                    </div>
-                    <div class="amount">
-                        <h5>AMOUNTS</h5>
-                        <form class="lil-buttons">
-                            <input id="input" type="number" type="input" max="10" min="1">
-                            <button id="button5" type="button">+</button>
-                            <button id="button6" type="button">-</button>
-                        </form>
-                    </div>
-                </div>
-                 <button class="add" type="button">ADD TO CART</button>
-            </div>
-        
-            <!-- Add to cart button -->
-             
-        </div>
-
+        <section class="img-container">
+            <img src="assets/img/lel-removebg-preview.png" alt="">
         </section>
-        <section class="bottom-main">
-            <!-- Delivery -->
-            <div class="delivery">
-                <h2>Delivery Notice</h2>
-                <p>Delivery hours are 9AM to 6PM
-                    and the delivery is free if your
-                    order is higher than 10$.</p>
-            </div>
-            <!-- Sub Information -->
-            <div class="aside">
-                <div class="aside1">
-                    <h2>NUTRITIONAL FACTS</h2>
-                    <ul>
-                        <li>Calories: <span>214kcal</span></li>
-                        <li>Total fat: <span>11.2g</span></li>
-                        <li>Cholesterol: <span>0mg</span></li>
-                        <li>Sodium: <span>294mg</span></li>
-                        <li>Potassium: <span>302mg</span></li>
-                    </ul>
+        <section class="product-container">
+            <h2 class="title">STRAWBERRY CAKE</h2>
+            <p class="price">₮ 17.6</p>
+            <p class="detail">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus quae cum doloremque animi perferendis aut corporis perspiciatis laborum fugiat qui?</p>
+            <button class="addToCart-btn">ADD TO CART</button>
+            <h3 class="sub-title">NUTRITIONAL VALUE</h3>
+            <div class="nutr-container">
+                <div class="item-container">
+                    <p class="value">240</p>
+                    <p class="target">Calorie</p>
+                    <p class="unit">kCal</p>
                 </div>
-                <div class="aside2">
-                    <h2>STORING INFORMATION</h2>
-                    <p>Keep it at room temperature for a day or two,
-                    then wrap it up and freeze it for longer-term storage.</p>
+                <div class="item-container">
+                    <p class="value">45</p>
+                    <p class="target">Carbs</p>
+                    <p class="unit">mg</p>
+                </div>
+                <div class="item-container">
+                    <p class="value">12</p>
+                    <p class="target">Protein</p>
+                    <p class="unit">mg</p>
+                </div>
+                <div class="item-container">
+                    <p class="value">23</p>
+                    <p class="target">Oil</p>
+                    <p class="unit">mg</p>
+                </div>
+            </div>
+            <h3 class="sub-title">INGRIDIENTS</h3>
+            <div class="ingr-container">
+                <div class="item-container">
+                    <img src="assets/ingridients-img/flour.png" alt="">
+                    <div class="item">
+                        <p class="mass">45%</p>
+                        <p class="name">Flour</p>
+                    </div>
+                </div>
+                <div class="item-container">
+                    <img src="assets/ingridients-img/milk.png" alt="">
+                    <div class="item">
+                        <p class="mass">45%</p>
+                        <p class="name">Milk</p>
+                    </div>
+                </div>
+                <div class="item-container">
+                    <img src="assets/ingridients-img/egg.png" alt="">
+                    <div class="item">
+                        <p class="mass">45%</p>
+                        <p class="name">Egg</p>
+                    </div>
+                </div>
+                <div class="item-container">
+                    <img src="assets/ingridients-img/butter.png" alt="">
+                    <div class="item">
+                        <p class="mass">45%</p>
+                        <p class="name">Butter</p>
+                    </div>
+                </div>
+                <div class="item-container">
+                    <img src="assets/ingridients-img/salt.png" alt="">
+                    <div class="item">
+                        <p class="mass">45%</p>
+                        <p class="name">Salt</p>
+                    </div>
+                </div>
+                <div class="item-container">
+                    <img src="assets/ingridients-img/sugar.png" alt="">
+                    <div class="item">
+                        <p class="mass">45%</p>
+                        <p class="name">Sugar</p>
+                    </div>
+                </div>
+                <div class="item-container">
+                    <img src="assets/ingridients-img/baking-soda.png" alt="">
+                    <div class="item">
+                        <p class="mass">45%</p>
+                        <p class="name">Baking Soda</p>
+                    </div>
                 </div>
             </div>
         </section>
     </main>
 
     <!-- Footer -->
-   <footer>
+    <footer>
         <!-- Main Footer -->
         <div class="main-footer-container">
             <ul class="footer-items-container">

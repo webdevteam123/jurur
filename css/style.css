@@ -68,6 +68,8 @@ ul {
 header {
     height: 5rem;
     position: fixed;
+    top: 0;
+    left: 0;
     z-index: 2;
     width: 100%;
     padding: 0 5%;
@@ -79,7 +81,7 @@ header {
 .white { 
     background: #fff; 
     box-shadow: rgba(0, 0, 0, 0.28) 0px 4px 8px;
-    transition: background-color 150ms ease-in-out, box-shadow 150ms ease-in-out, color 250ms ease-in-out;
+    transition: background-color 250ms ease-in-out, box-shadow 250ms ease-in-out, color 250ms ease-in-out;
 }
 .white .blue { fill: var(--main-bg-color); }
 .white .black { fill: var(--main-font-color); }
