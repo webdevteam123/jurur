@@ -1,0 +1,109 @@
+:root {
+    --main-bg-color: #507DBC;
+    --main-font-color: #3d3f56;
+    --sub-bg-color: #A3CEF1;
+    --sub-font-color: #73B1BC;
+    --section-margin: 2rem;
+    --main-font: 'Raleway', sans-serif;
+    --footer-bg-color: #f2f2f2;
+    --other-font:'Montserrat', sans-serif;
+    --price-color:#73B1BC;
+    --main-width: 1536px;
+}
+@media(min-width: 992px) { :root { --main-width: 968px; --banner-height: 30rem} }
+
+@media(min-width: 1600px) { :root { --main-width: 1280px; --banner-height: 40rem } }
+
+@media(min-width: 1920px) { :root { --main-width: 1568px; --img-size: 20rem; --banner-height: 50rem } }
+
+@media(max-width: 768px) { :root { --section-margin: 1rem; } }
+
+
+/* ----------------------------------------------------------- */
+
+
+.history {
+    display: flex;
+    margin: auto;
+    height: 3rem;
+    width: var(--main-width);
+    list-style-type: none;
+}
+
+.history .history-item {
+    font-size: 14px;
+    
+}
+
+.history .with-slash::before {
+    content: "/";
+    margin: 0 0.5rem;
+}
+
+@media(max-width: 768px) {
+    .history { width: 95%; }
+}
+
+
+/* ----------------------------------------------------------- */
+
+
+#img-1{
+	width: 100%;
+}
+#img-2{
+    width:50%;
+    object-fit: cover;
+}
+main{
+    display: flex;
+    width: var(--main-width);
+    margin: auto;
+}
+.aside-content{
+    
+}
+.content{
+    margin-left: 5vh; 
+}
+.aside-content h3{
+    margin-bottom: 2vh;
+}
+.aside-menu li{
+    margin-left: 1vh;
+    margin-bottom: 1.5vh;
+}
+#title{
+    margin: 5vh 0;
+    font-size: 48px;
+    color: var(--main-bg-color);  
+    font-family: var(--main-font);
+}
+.top-content p{
+    font-size: 18px;
+    margin: 5vh 0;
+}
+.bottom-content{
+    display: flex;
+    font-size: 24px;
+    text-align: center;
+    background-color: var(--main-bg-color);
+    margin-bottom: 5rem;
+    height: 40rem;
+}
+.bottom-content .side-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.bottom-content p{
+    color: white;
+    width: 80%; 
+
+}
+.bottom-content svg{
+    margin-top: 5vh;
+
+}

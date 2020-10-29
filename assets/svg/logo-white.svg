@@ -1,5 +1,3 @@
-<svg id="Component_6_1" data-name="Component 6 – 1" xmlns="http://www.w3.org/2000/svg" width="171" height="78" viewBox="0 0 171 78">
-  <text id="JUR_UR" data-name="JUR UR" transform="translate(0 45)" fill="#fff" font-size="48" font-family="Raleway" font-weight="800"><tspan x="0" y="0">JUR UR</tspan></text>
-  <text id="BAKERY" transform="translate(68 72)" fill="#fff" font-size="24" font-family="Montserrat-Regular, Montserrat"><tspan x="0" y="0">BAKERY</tspan></text>
-  <text id="SINCE_1987" data-name="SINCE 1987" transform="translate(12 62)" fill="#fff" font-size="10" font-family="Montserrat-Regular, Montserrat"><tspan x="0" y="0">SINCE 1987</tspan></text>
+<svg xmlns="http://www.w3.org/2000/svg" width="154" height="64" viewBox="0 0 154 64">
+  <text id="JUR_UR" data-name="JUR UR" transform="translate(0 52)" fill="#fff" font-size="48" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">JUR UR</tspan></text>
 </svg>

@@ -7,107 +7,165 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="language" content="English">
     <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link rel="stylesheet" type="text/css" href="./css/about.css">
+    <link rel="icon" type="image/png" href="assets/favicon.png"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Raleway&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/60fa06b939.js" crossorigin="anonymous"></script>
 	<title>About us|Jur Ur Bakery</title>
 </head>
 <body>
-	<!-- Header -->
-	<header>
-        <!-- Logo -->
-        <img src="" alt="logo">
+    <!-- Header -->
+   <header class="trans">
         <!-- Navbar -->
-        <nav>
-            <div>
-                <h5>Locations</h5>
-                <ul>
-                    <li>Search</li>
-                    <li><a href="payment.html">Cart</a></li>
-                    <li><a href="account.html">User</a></li>
-                </ul>
-            </div>
-            <ul>
-                <li><a href="products.html">CAKE</a></li>
-                <li><a href="products.html">BAKERY</a></li>
-                <li><a href="products.html">BEVERAGE</a></li>
-                <li><a href="products.html">HOLYDAY</a></li>
-                <li><a href="products.html">CUSTOM</a></li>
+        <nav class="navbar menu">
+            <!-- <hr color="#ccc"> -->
+            <ul class="main-navbar">
+                <li class="nav-item close"><button><i class="fas fa-times"></i></button></li>
+                <li class="nav-item"><a href="products.html">БЯЛУУ</a></li>
+                <li class="nav-item"><a href="products.html">БЭЙКЭРИ</a></li>
+                <li class="nav-item"><a href="products.html">УНДАА</a></li>
+                <li class="nav-item"><a href="products.html">БАЯР</a></li>
+                <li class="nav-item"><a href="products.html">ЗАХИАЛГА</a></li>
+            </ul>
+            <button class="nav-item hamburger"><i class="fas fa-bars"></i></button>
+        </nav>
+        <!-- Logo -->
+        <a href="index.html" class="logo-container">
+            <svg id="Component_6_1" data-name="Component 6 – 1" xmlns="http://www.w3.org/2000/svg" width="171" height="78" viewBox="0 0 171 78">
+                <text class="blue" id="JUR_UR" data-name="JUR UR" transform="translate(0 45)" fill="#fff" font-size="48" font-family="Raleway" font-weight="800"><tspan x="0" y="0">JUR UR</tspan></text>
+                <text class="black" id="BAKERY" transform="translate(68 72)" fill="#fff" font-size="24" font-family="Montserrat-Regular, Montserrat"><tspan x="0" y="0">BAKERY</tspan></text>
+                <text class="black" id="SINCE_1987" data-name="SINCE 1987" transform="translate(12 62)" fill="#fff" font-size="10" font-family="Montserrat-Regular, Montserrat"><tspan x="0" y="0">SINCE 1987</tspan></text>
+            </svg>              
+        </a>
+        <nav class="navbar">
+            <ul class="sub-navbar">
+                <li class="nav-item locations"><a href="branch.html">БАЙРШИЛ</a></li>
+                <li class="nav-item search"><i class="fas fa-search"></i></li>
+                <li class="nav-item user"><a href="account.html"><i class="fas fa-user-circle"></i></a></li>
+                <li class="nav-item cart"><button><i class="fas fa-box"></i></button></li>
             </ul>
         </nav>
     </header>
+
+    <ul class="history">
+        <li class="history-item"><a href="index.html">Нүүр</a></li>
+        <li class="history-item with-slash"><a href="products.html">Бялуу</a></li>
+    </ul>
+
     <main>
-    	<section>
-    		<div>
-    			Home > Products > Our story
-     		</div>
-     		<div>
+    	<section class="aside">
+     		<div class="aside-content">
      			<h3>ABOUT US</h3>
-     			<ul>
-     				<li><a href="about.html">OUR STORY<a/></li>
-     				<li><a href="about.html">OUR GOAL<a/></li>
-     				<li><a href="about.html">TIMELINE<a/></li>
-     				<li><a href="about.html">ACHIEVEMENTS<a/></li>
-     			</ul>
+     			<ul class="aside-menu">
+                    <li><a href="about.html">OUR STORY</a></li>
+                    <li><a href="about.html">OUR GOALS</a></li>
+                    <li><a href="about.html">ACHIEVEMENTS</a></li>
+                    <li><a href="about.html">TIMELINE</a></li>
+                </ul>
      		</div>
-    	</section>
-    	<section>
-    		<img src="" alt="team-img">
-    		<div>
-    			<h3>OUR STORY</h3>
-    			<p>SAMPLE TEXT</p>
+        </section>
+    	<section class="content">
+    		<img id="img-1" src="./assets/img/team-img.jpg" alt="team image">
+    		<div class="top-content">
+    			<h3 id="title">OUR STORY</h3>
+    			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce eget efficitur ligula, eget venenatis libero. Sed 
+                    non fermentum ante. Vestibulum auctor finibus turpis sit amet pellentesque. In vitae magna erat. Nullam etium 
+                    vulputate ipsum, sed semper felis. In hac habitasse platea dictumst. Quisque finibus accumsan interdum. Cras
+                    aliquet tortor at leo consectetur molestie. Ut mollis lorem in ligula consequat, placerat ermentum diam dapibu.
+                    Fusce eleifend est eget molestie tincidunt. Suspendisse metus est, gravida pharetra mauris facilisis, tincidunt
+                    commodo ante. Etiam placerat, nulla id dignissim viverra, lacus massa lacinia lorem, vitae cursus dui nisi non ui.
+                    Maecenas tristique vel purus nec hendrerit.
+
+                    Aenean dictum venenatis urna, consectetur elementum purus pulvinar vestibulum. Aenean pulvinar elit sapien, 
+                    sit amet tempus ipsum imperdiet at. Orci varius natoque penatibus et magnis dis parturient montes, nascetur 
+                    ridiculus mus. Curabitur ultricies diam ac purus luctus, ac porta dolor pretium. Nunc consectetur sed enim a 
+                    porttitor. Etiam sit amet leo dolor. Nam vulputate lorem et mi porta gravida. Pellentesque rutrum ornare velit, ut 
+                    finibus mi mollis sit amet. Donec ultricies scelerisque risus, sit amet lacinia urna pharetra eu.
+
+                    Proin vehicula tristique pulvinar. Nunc nec condimentum lorem. Maecenas in metus et massa ullamcorper 
+                    bibendum in sit amet dui. Cras hendrerit, risus sed luctus convallis, ex sem euismod tortor, eget ornare erat purs
+                    quis velit. Proin sagittis pulvinar consequat. Ut ultricies dolor sit amet erat vulputate congue. Mauris neque null,
+                    rhoncus pharetra euismod id, elementum non lectus. Pellentesque venenatis nulla nec aliquet mollis. Suspisse 
+                    lacinia est at dapibus pulvinar. Vestibulum sagittis sit amet leo quis dictum. Phasellus interdum lectus a massa
+                    maximus facilisis. Phasellus nibh ante, laoreet pulvinar ex eget, elementum venenatis diam. Quisque quis ultra
+                    leo, ut porttitor risus. Morbi porta augue quis mauris ullamcorper, et consequat odio convallis. Vivamus auctor 
+                    lorem turpis, varius efficitur tellus accumsan ac.</p>
     		</div>
-    		<img src="" alt="team-img2">
-    		<div>
-    			<p>SAMPLE TEXT2</p>
+    		<div class="bottom-content">
+                <img id="img-2" src="./assets/img/team-img2.jpg" alt="team image">
+                <div class="side-content">
+                    <svg id="Component_6_1" data-name="Component 6 – 1" xmlns="http://www.w3.org/2000/svg" width="171" height="78" viewBox="0 0 171 78">
+                        <text class="blue" id="JUR_UR" data-name="JUR UR" transform="translate(0 45)" fill="#fff" font-size="48" font-family="Raleway" font-weight="800"><tspan x="0" y="0">JUR UR</tspan></text>
+                        <text class="black" id="BAKERY" transform="translate(68 72)" fill="#fff" font-size="24" font-family="Montserrat-Regular, Montserrat"><tspan x="0" y="0">BAKERY</tspan></text>
+                        <text class="black" id="SINCE_1987" data-name="SINCE 1987" transform="translate(12 62)" fill="#fff" font-size="10" font-family="Montserrat-Regular, Montserrat"><tspan x="0" y="0">SINCE 1987</tspan></text>
+                    </svg>
+                    <p> Vestibulum auctor finibus turpis 
+                    sit amet pellentesque. In vitae    
+                    magna erat. Nullam etium vulpu 
+                    ipsum, sed semperfelis.Vestibulum
+                    auctor finibus turpis sit amet pelle
+                    tesque. In vitae magna erat.   Vestibulum auctor finibus turpis 
+                    sit amet pellentesque. In vitae    
+                    magna erat. Nullam etium vulpu 
+                    ipsum, sed semperfelis.Vestibulum
+                    auctor finibus turpis sit amet pelle
+                    tesque. In vitae magna erat. </p>
+                </div>
     		</div>
     	</section>
     </main>
      <!--Footer -->
-    <footer>
+        <footer>
         <!-- Main Footer -->
-        <div>
-            <div>
-                <h1>ABOUT US</h1>
-                <a href="about.html">Introduction</a>
-                <a href="about.html">Goal</a>
-                <a href="about.html">Timeline</a>
-                <a href="about.html">Achievements</a>
-            </div>
-            <div>
-                <h1>PRODUCTS</h1>
-                <a href="products.html">Cake</a>
-                <a href="products.html">Bakery</a>
-                <a href="products.html">Beverage</a>
-                <a href="products.html">Holiday</a>
-            </div>
-            <div>
-                <h1>ONLINE</h1>
-                <a href="about.html">Delivery Area</a>
-                <a href="about.html">Term and Condition</a>
-                <a href="about.html">Security</a>
-                <a href="about.html">How to Order</a>
-            </div>
-            <div>
-                <h1>ACCOUNT</h1>
-                <a href="login.html">Login</a>
-                <a href="signup.html">Register</a>
-            </div>
-            <div>
-                <h1>CONTACT</h1>
-                <a href="about.html">Contact Us</a>
-                <a href="about.html">Feedback</a>
-                <a href="about.html">Phone: 70045556</a>
-                <a href="about.html">Email: order@jurur.mn</a>
-            </div>
+        <div class="main-footer-container">
+            <ul class="footer-items-container">
+                <h1 class="item-title">БИДНИЙ ТУХАЙ</h1>
+                <li class="item"><a href="about.html">Танилцуулага</a></li>
+                <li class="item"><a href="about.html">Бидний Зорилго</a></li>
+                <li class="item"><a href="about.html">Цаг Хугацаа</a></li>
+                <li class="item"><a href="about.html">Амжилтууд</a></li>
+            </ul>
+            <ul class="footer-items-container">
+                <h1 class="item-title">БҮТЭЭГДЭХҮҮН</h1>
+                <li class="item"><a href="products.html">Бялуу</a></li>
+                <li class="item"><a href="products.html">Бэйкэри</a></li>
+                <li class="item"><a href="products.html">Уух юм</a></li>
+                <li class="item"><a href="products.html">Баярын</a></li>
+            </ul>
+            <ul class="footer-items-container">
+                <h1 class="item-title">ЦАХИМ</h1>
+                <li class="item"><a href="about.html">Хүргэлтийн Хүрээ</a></li>
+                <li class="item"><a href="about.html">Үйлчилгэний нөхцөл</a></li>
+                <li class="item"><a href="about.html">Хамгаалал</a></li>
+                <li class="item"><a href="about.html">Хэрхэн Захиалах вэ?</a></li>
+            </ul>
+            <ul class="footer-items-container">
+                <h1 class="item-title">БҮРТГЭЛ</h1>
+                <li class="item"><a href="login.html">Нэвтрэх</a></li>
+                <li class="item"><a href="signup.html">Бүртгүүлэх</a></li>
+            </ul>
+            
+            <ul class="footer-items-container">
+                <h1 class="item-title">ХОЛБОГДОХ</h1>
+                <li class="item"><a href="about.html">Бидэндэй Холбогдох</a></li>
+                <li class="item"><a href="about.html">Санал гомдол</a></li>
+                <li class="item"><a href="about.html">Утас: 94949494</a></li>
+                <li class="item"><a href="about.html">Цахим шуудан: order@jurur.mn</a></li>
+            </ul>
         </div>
         <!-- Social Links -->
-        <div>
-            <a href="#">Facebook</a>
-            <a href="#">Twitter</a>
-            <a href="#">Instagram</a>
+        <div class="social-links">
+            <a href="http://www.facebook.com"><i class="fab fa-facebook-square"></i></a>
+            <a href="http://www.twitter.com"><i class="fab fa-twitter-square"></i></a>
+            <a href="http://www.instagram.com"><i class="fab fa-instagram-square"></i></a>
         </div>
         <!-- Copyright Notice -->
-        <h6>Copyright &copy; www.jurur.mn. All right reserved.</h6>
+        <h6 class="copy-msg">Copyright &copy; www.jurur.mn. All right reserved.</h6>
     </footer>
+    <script src="main.js"></script>
+
 
 </body>
 </html>
