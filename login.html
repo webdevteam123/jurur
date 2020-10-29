@@ -15,96 +15,36 @@
     <title>Нэвтрэх | Жүр Үр Бэйкери</title>
 </head>
 <body>
-	<main>
-		<section class="login">
-            <img src="assets/img/wave1.png" class="wave">
-            <div class="signup">
-                <h2>Шинээр бүртгүүлэх</h2>
-                <a href="signup.html"><input type="submit" class="btn1" value="бүртгүүлэх" ></a>
+    <!-- Main -->
+	<main id="main">
+        <!-- Side Image -->
+        <aside class="side-section">
+            <a href="index.html"><img src="./assets/svg/logo-white.svg" alt="" class="logo"></a>
+            <p>Dont have an account?</p>
+            <a href="signup.html" class="redirect">БҮРТГҮҮЛЭХ</a>
+        </aside>
+        <!-- Login Form -->
+        <section class="form-section">
+            <img src="/assets/img/cupcake.png" alt="" class="logo">
+            <h1 class="title">НЭВТРЭХ</h1>
+            <form class="form-container">
+                <div class="form-group">
+                    <label for="email"><i class="fas fa-user"></i></label>
+                    <input type="email" name="email" id="email" placeholder="Email">
+                </div>
+                <div class="form-group">
+                    <label for="password"><i class="fas fa-lock"></i></label>
+                    <input type="password" name="password" id="password" placeholder="Password">
+                </div>
+                <button type="submit">НЭВТРЭХ</button>
+            </form>
+            <div style="margin: 2rem 0; font-weight: bold;">OR CONTINUE WITH</div>
+            <div class="oauth-container">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-google"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
             </div>
-            <div class="login-item"> 
-				<div class="login-item-img">
-                    <img class="login-img" src="assets/svg/loginpic.svg" alt="section-img"><br>
-				</div>
-				<div class="login-container">
-    				<form action="login.html">
-                        <img class="profile" src="assets/img/cupcake.png">
-                        <h2 class="title">Нэвтрэх</h2>
-                        <div class="input-div one focus">
-            			     <i class="fas fa-user"></i>
-                            <div>
-                                <h5>Нэвтрэх нэр эсвэл Имэйл</h5>
-                                <input class="input" type="text">
-                            </div>
-                        </div>
-                        <div class="input-div two focus">
-                            <i class="fas fa-lock"></i>
-                            <div>
-                                <h5>Нууц үг</h5>
-                                <input class= "input" type="Password" name="">
-                            </div>
-                        </div>
-                        <a href="" class="pass">Нууц үгээ мартсан уу?</a>
-            			<input type="submit" class="btn" value="Нэвтрэх" >
-                        <div class="platforms">
-                            <h5>Эсвэл сошиал хаягаараа нэвтрэх</h5>
-                            <ul>
-                                <li><a href="http://www.facebook.com"><i class="fa fa-facebook"></i></a></li>
-                                <li><a href="http://www.twitter.com"><i class="fa fa-twitter"></i></a></li>
-                                <li><a href="http://www.instagram.com"><i class="fa fa-instagram"></i></a></li>
-                            </ul>
-                        </div>
-                    </form>
-            	</div>
-            </div>
-		</section>
-	</main>
-    <!-- Footer -->
-    <footer>
-        <!-- Main Footer -->
-        <div class="main-footer-container">
-            <ul class="footer-items-container">
-                <h1 class="item-title">БИДНИЙ ТУХАЙ</h1>
-                <li class="item"><a href="about.html">Танилцуулага</a></li>
-                <li class="item"><a href="about.html">Бидний Зорилго</a></li>
-                <li class="item"><a href="about.html">Цаг Хугацаа</a></li>
-                <li class="item"><a href="about.html">Амжилтууд</a></li>
-            </ul>
-            <ul class="footer-items-container">
-                <h1 class="item-title">БҮТЭЭГДЭХҮҮН</h1>
-                <li class="item"><a href="products.html">Бялуу</a></li>
-                <li class="item"><a href="products.html">Бэйкэри</a></li>
-                <li class="item"><a href="products.html">Уух юм</a></li>
-                <li class="item"><a href="products.html">Баярын</a></li>
-            </ul>
-            <ul class="footer-items-container">
-                <h1 class="item-title">ЦАХИМ</h1>
-                <li class="item"><a href="about.html">Хүргэлтийн Хүрээ</a></li>
-                <li class="item"><a href="about.html">Үйлчилгэний нөхцөл</a></li>
-                <li class="item"><a href="about.html">Хамгаалал</a></li>
-                <li class="item"><a href="about.html">Хэрхэн Захиалах вэ?</a></li>
-            </ul>
-            <ul class="footer-items-container">
-                <h1 class="item-title">БҮРТГЭЛ</h1>
-                <li class="item"><a href="login.html">Нэвтрэх</a></li>
-                <li class="item"><a href="signup.html">Бүртгүүлэх</a></li>
-            </ul>
-            <ul class="footer-items-container">
-                <h1 class="item-title">ХОЛБОГДОХ</h1>
-                <li class="item"><a href="about.html">Бидэндэй Холбогдох</a></li>
-                <li class="item"><a href="about.html">Санал гомдол</a></li>
-                <li class="item"><a href="about.html">Утас: 94949494</a></li>
-                <li class="item"><a href="about.html">Цахим шуудан: order@jurur.mn</a></li>
-            </ul>
-        </div>
-        <!-- Social Links -->
-        <div class="social-links">
-            <a href="http://www.facebook.com"><i class="fab fa-facebook-square"></i></a>
-            <a href="http://www.twitter.com"><i class="fab fa-twitter-square"></i></a>
-            <a href="http://www.instagram.com"><i class="fab fa-instagram-square"></i></a>
-        </div>
-        <!-- Copyright Notice -->
-        <h6 class="copy-msg">Copyright &copy; www.jurur.mn. All right reserved.</h6>
-    </footer>
+        </section>
+    </main>
 </body>
 </html>
