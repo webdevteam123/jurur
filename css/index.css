@@ -216,7 +216,7 @@ main {
 }
 
 @media(max-width: 768px) {
-    .banner .banner-item { height: 22.5rem; text-align: center; }
+    .banner .banner-item { height: 30rem; text-align: center; }
     .banner .first { background: #FFD1C7; }
     .banner-item  .banner-item-img { display: none }
     .banner-item .banner-desc { width: 100%; margin: auto; padding: 0; }
