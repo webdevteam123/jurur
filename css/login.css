@@ -43,6 +43,10 @@ main .side-section {
     height: 100%;
 }
 
+main .side-section a {
+    text-align: center;
+}
+
 .side-section p {
     margin: 4rem;
     font-size: 24px;
