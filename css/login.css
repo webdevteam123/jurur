@@ -81,7 +81,7 @@ main .side-section a {
         margin: 2rem;
         font-size: 18px;
     }
-    .side-section a {
+    .side-section .redirect {
         font-size: 18px;
     }
 }
