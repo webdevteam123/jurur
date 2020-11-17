@@ -5,7 +5,10 @@ export default class ProductContainerComponent {
         this.state = {
             url,
             productList: [],
-            category: "",
+            filter: {
+                category: "",
+                state: ""
+            },
             lastUpdate: Date.now(),
             isChanged: false
         }

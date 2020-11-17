@@ -6,7 +6,6 @@ export default class ProductComponent {
             productPrice: product.price,
             productState: product.productState,
             productImg: product.img,
-            category: product.category,
             imgAlt: product.imgAlt,
             publishDate: product.publishDate
         }
