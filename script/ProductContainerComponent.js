@@ -12,7 +12,7 @@ export default class ProductContainerComponent {
     }
 
     download(containerElm) {
-        fetch(`${ this.state.url }/8`, {
+        fetch(`${ this.state.url }/latest`, {
             headers: {
                 "secret-key": "$2b$10$hX6pTzpkeoQeo.BOLFlqXeWsuIyhyBKMNwAFTsEE7N5MgEb6eozBi"
             }
